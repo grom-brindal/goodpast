@@ -1,0 +1,480 @@
+
+ Primary working directories    : /scratch.local/johan406.molpro_temp/molpro.MZJMmPicjk
+ Secondary working directories  : /scratch.local/johan406.molpro_temp/molpro.MZJMmPicjk
+ Wavefunction directory         : /home/goodpast/johan406/wfu/
+ Main file repository           : /scratch.local/johan406.molpro_temp/molpro.MZJMmPicjk/
+
+ id        : roweumn
+
+ Nodes     nprocs
+ cn0117       1
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (934), CPU time= 0.00 sec
+                                                                                 !leave this line blank
+ 
+ gprint, orbitals=30
+ memory, 125., m
+ symmetry, nosym
+ nelect=16
+ basis=6-31g*
+ 
+ geometry={
+ C -0.0 0.0 0.6691
+ C 0.0 0.0 -0.6691
+ H 0.198 0.9149 1.2348
+ H -0.198 -0.9149 1.2348
+ H -0.198 0.9149 -1.2348
+ H 0.198 -0.9149 -1.2348
+ }
+ 
+ hf
+ {multi,
+ closed 7
+ occ 9
+ wf,spin=0;STATE,3
+ }
+ 
+ Commands  initialized (763), CPU time= 0.01 sec, 617 directives.
+ Default parameters read. Elapsed time= 0.08 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2019.2 linked Oct 25 2019 22:50:27
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                 
+  64 bit serial version                                                                  DATE: 26-Jan-23          TIME: 20:01:29  
+ **********************************************************************************************************************************
+
+ SHA1:             8dbd9ae1082e4ce945b0f27595c9eb2d4aa09004
+ **********************************************************************************************************************************
+
+
+ Variable memory set to  125000000 words,  buffer space 
+
+ SETTING NELECT         =        16.00000000                                  
+ SETTING BASIS          =    6-31G*
+ ZSYMEL=NOSYM
+
+
+Geometry recognized as XYZ
+
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry C      S 6-31G                selected for orbital group  1
+ Library entry C      P 6-31G                selected for orbital group  1
+ Library entry C      D 6-31G*               selected for orbital group  1
+ Library entry H      S 6-31G                selected for orbital group  2
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  C       6.00   -0.000000000    0.000000000    1.264415750
+   2  C       6.00    0.000000000    0.000000000   -1.264415750
+   3  H       1.00    0.374165773    1.728910431    2.333433819
+   4  H       1.00   -0.374165773   -1.728910431    2.333433819
+   5  H       1.00   -0.374165773    1.728910431   -2.333433819
+   6  H       1.00    0.374165773   -1.728910431   -2.333433819
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.528831500  1-3  2.066865002  1-4  2.066865002  2-5  2.066865002  2-6  2.066865002
+     ( 1.338200000)     ( 1.093737857)     ( 1.093737857)     ( 1.093737857)     ( 1.093737857)
+
+ Bond angles
+
+  1-2-5  121.14576925   1-2-6  121.14576925   2-1-3  121.14576925   2-1-4  121.14576925
+
+  3-1-4  117.70846150   5-2-6  117.70846150
+
+ NUCLEAR CHARGE:                   16
+ NUMBER OF PRIMITIVE AOS:          72
+ NUMBER OF SYMMETRY AOS:           70
+ NUMBER OF CONTRACTIONS:           36   (   36A   )
+ NUMBER OF CORE ORBITALS:           2   (    2A   )
+ NUMBER OF VALENCE ORBITALS:       12   (   12A   )
+
+
+ NUCLEAR REPULSION ENERGY   33.16664546
+
+
+ Eigenvalues of metric
+
+         1 0.830E-02 0.199E-01 0.392E-01 0.508E-01 0.693E-01 0.192E+00 0.217E+00 0.227E+00
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     1.049 MB (compressed) written to integral file ( 50.7%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:     222111.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:     222111      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.78 MW
+
+ SORT1 READ      284735. AND WROTE      156947. INTEGRALS IN      1 RECORDS. CPU TIME:     0.01 SEC, REAL TIME:     0.01 SEC
+ SORT2 READ      156947. AND WROTE      222111. INTEGRALS IN      4 RECORDS. CPU TIME:     0.02 SEC, REAL TIME:     0.02 SEC
+
+ FILE SIZES:   FILE 1:    31.1 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:     35.4 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       30.88       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.36      0.26
+ REAL TIME  *         0.57 SEC
+ DISK USED  *        35.71 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * RHF-SCF (CLOSED SHELL)       Authors: W. Meyer, H.-J. Werner
+
+
+ NUMBER OF ELECTRONS:       8+    8-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-05 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Orbital guess generated from atomic densities. Full valence occupancy:    8
+
+ Molecular orbital dump at record        2100.2
+
+ Initial occupancy:   8
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   ORB.
+    1      0.000D+00      0.000D+00       -77.99223410    118.294145    0.00000    0.00000    0.00000    0    start
+    2      0.000D+00      0.849D-02       -78.01391816    116.448213    0.00000    0.00000   -0.00000    1    diag
+    3      0.819D-02      0.293D-02       -78.01610143    117.088003    0.00000    0.00000   -0.00000    2    diag
+    4      0.267D-02      0.724D-03       -78.01633141    116.986621   -0.00000    0.00000    0.00000    3    diag
+    5      0.109D-02      0.849D-04       -78.01633556    116.989789   -0.00000    0.00000   -0.00000    4    diag
+    6      0.164D-03      0.158D-04       -78.01633574    116.989245   -0.00000    0.00000    0.00000    5    diag
+    7      0.227D-04      0.394D-05       -78.01633576    116.989277   -0.00000    0.00000   -0.00000    6    diag
+    8      0.634D-05      0.487D-06       -78.01633576    116.989266    0.00000    0.00000   -0.00000    0    orth
+
+ Final occupancy:   8
+
+ !RHF STATE  1.1 Energy               -78.016335755681
+ Nuclear energy                        33.16664546
+ One-electron energy                 -169.67761441
+ Two-electron energy                   58.49463320
+ Virial quotient                       -1.00113473
+ !RHF STATE  1.1 Dipole moment          0.00000000     0.00000000    -0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000    -0.00000000
+
+ ELECTRON ORBITALS
+ =================
+
+  Orbital  Occupation    Energy     Coefficients
+    1.1     2.00000   -11.22948     1 1s    0.70420     2 1s    0.70420
+    2.1     2.00000   -11.22789     1 1s    0.70455     2 1s   -0.70455
+    3.1     2.00000    -1.02510     1 1s    0.30197     2 1s    0.30197
+    4.1     2.00000    -0.78366     1 1s    0.24919
+    5.1     2.00000    -0.63191     1 2py   0.31726     2 2py   0.31726
+    6.1     2.00000    -0.57781     1 2pz   0.40550     2 2pz  -0.40550
+    7.1     2.00000    -0.51252     1 2py   0.27717     2 2py  -0.27717
+    8.1     2.00000    -0.35582     1 2px   0.34840     1 2px   0.30038     2 2px   0.34840     2 2px   0.30038
+    9.1     0.00000     0.16528     1 2px   0.32639     1 2px   0.65964     2 2px  -0.32639     2 2px  -0.65964
+   10.1     0.00000     0.26530     1 1s   -1.44425     1 2pz  -0.62694     2 1s   -1.44425     2 2pz   0.62694     3 1s    1.01586
+                                    4 1s    1.01586     5 1s    1.01586     6 1s    1.01586
+   11.1     0.00000     0.29676     1 2px  -0.42011     1 2py  -0.76659     2 2px   0.42011     2 2py  -0.76659     3 1s    1.08197
+                                    4 1s   -1.08197     5 1s    1.08197     6 1s   -1.08197
+   12.1     0.00000     0.30018     1 1s   -1.80933     2 1s    1.80933     3 1s    1.04919     4 1s    1.04919     5 1s   -1.04919
+                                    6 1s   -1.04919
+   13.1     0.00000     0.38488     1 2py  -1.78324     2 2py   1.78324     3 1s    1.54784     4 1s   -1.54784     5 1s   -1.54784
+                                    6 1s    1.54784
+   14.1     0.00000     0.48461     1 1s   -3.06167     1 2pz   2.89643     2 1s    3.06167     2 2pz   2.89643     3 1s   -0.51047
+                                    4 1s   -0.51047     5 1s    0.51047     6 1s    0.51047
+   15.1     0.00000     0.66889     1 2pz  -0.55680     1 2pz   1.02682     2 2pz   0.55680     2 2pz  -1.02682
+   16.1     0.00000     0.78019     1 2px  -0.72244     1 2px   0.63727     2 2px  -0.72244     2 2px   0.63727
+   17.1     0.00000     0.78476     1 2py  -0.41558     1 2py   0.78678     2 2py  -0.41558     2 2py   0.78678     3 1s   -0.38780
+                                    4 1s    0.38780     5 1s   -0.38780     6 1s    0.38780
+   18.1     0.00000     0.86595     1 1s   -0.85785     1 1s    1.37900     1 2pz   0.31559     2 1s   -0.85785     2 1s    1.37900
+                                    2 2pz  -0.31559     3 1s   -0.41284     4 1s   -0.41284     5 1s   -0.41284     6 1s   -0.41284
+   19.1     0.00000     0.88571     1 2px  -0.79859     1 2px   1.06528     2 2px   0.79859     2 2px  -1.06528
+   20.1     0.00000     0.95344     1 1s   -0.87231     1 2pz   0.61098     1 2pz  -0.38016     2 1s    0.87231     2 2pz   0.61098
+                                    2 2pz  -0.38016     3 1s    0.38066     4 1s    0.38066     5 1s   -0.38066     6 1s   -0.38066
+   21.1     0.00000     1.10859     1 2py  -0.66920     1 2px   0.36881     1 2py   1.07340     2 2py  -0.66920     2 2px  -0.36881
+                                    2 2py   1.07340     3 1s    0.38213     3 1s   -1.05257     4 1s   -0.38213     4 1s    1.05257
+                                    5 1s    0.38213     5 1s   -1.05257     6 1s   -0.38213     6 1s    1.05257
+   22.1     0.00000     1.13865     1 2py   0.89525     1 2px  -0.37173     1 2py  -2.84548     2 2py  -0.89525     2 2px  -0.37173
+                                    2 2py   2.84548     3 1s    1.42574     4 1s   -1.42574     5 1s   -1.42574     6 1s    1.42574
+   23.1     0.00000     1.19860     1 1s    1.05868     1 1s   -1.76358     1 2pz   0.35884     1 2pz  -0.50394     2 1s    1.05868
+                                    2 1s   -1.76358     2 2pz  -0.35884     2 2pz   0.50394     3 1s   -0.42505     3 1s    0.87489
+                                    4 1s   -0.42505     4 1s    0.87489     5 1s   -0.42505     5 1s    0.87489     6 1s   -0.42505
+                                    6 1s    0.87489
+   24.1     0.00000     1.19867     1 1s   -0.58587     1 1s    0.71547     1 2pz  -0.60350     1 2pz   1.09716     2 1s    0.58587
+                                    2 1s   -0.71547     2 2pz  -0.60350     2 2pz   1.09716     3 1s    0.46283     3 1s   -0.95206
+                                    4 1s    0.46283     4 1s   -0.95206     5 1s   -0.46283     5 1s    0.95206     6 1s   -0.46283
+                                    6 1s    0.95206
+   25.1     0.00000     1.33363     1 1s   -1.55815     1 1s    5.32194     1 2pz   0.29274     1 2pz  -2.01964     2 1s    1.55815
+                                    2 1s   -5.32194     2 2pz   0.29274     2 2pz  -2.01964
+   26.1     0.00000     1.37356     1 2py   1.84825     2 2py  -1.84825     3 1s   -0.63881     3 1s   -0.34757     4 1s    0.63881
+                                    4 1s    0.34757     5 1s    0.63881     5 1s    0.34757     6 1s   -0.63881     6 1s   -0.34757
+   27.1     0.00000     1.82954     1 2py   1.18595     1 3d1+  0.58961     2 2py  -1.18595     2 3d1+ -0.58961     3 1s   -0.29296
+                                    3 1s   -0.36122     4 1s    0.29296     4 1s    0.36122     5 1s    0.29296     5 1s    0.36122
+                                    6 1s   -0.29296     6 1s   -0.36122
+   28.1     0.00000     1.85600     1 1s    0.54305     1 3d2-  0.66099     2 1s   -0.54305     2 3d2-  0.66099
+   29.1     0.00000     2.02129     1 1s   -0.34727     1 3d2-  0.45384     1 3d2+  0.54663     2 1s   -0.34727     2 3d2- -0.45384
+                                    2 3d2+  0.54663
+   30.1     0.00000     2.28546     1 3d1-  0.67598     2 3d1- -0.67598     3 1s   -0.48748     4 1s    0.48748     5 1s   -0.48748
+                                    6 1s    0.48748
+   31.1     0.00000     2.30289     1 1s   -0.27587     1 1s    0.48646     1 3d0   0.25990     1 3d2-  0.55330     1 3d2+ -0.42117
+                                    2 1s   -0.27587     2 1s    0.48646     2 3d0   0.25990     2 3d2- -0.55330     2 3d2+ -0.42117
+                                    3 1s   -0.28584     4 1s   -0.28584     5 1s   -0.28584     6 1s   -0.28584
+   32.1     0.00000     2.41957     1 1s   -0.46569     1 2pz   0.26155     1 2pz  -0.45442     1 3d0   0.65261     2 1s   -0.46569
+                                    2 2pz  -0.26155     2 2pz   0.45442     2 3d0   0.65261
+   33.1     0.00000     2.57454     1 1s    0.30532     1 1s   -1.38173     1 2pz   0.30966     1 3d2+  0.76492     2 1s   -0.30532
+                                    2 1s    1.38173     2 2pz   0.30966     2 3d2+ -0.76492     3 1s    0.42714     4 1s    0.42714
+                                    5 1s   -0.42714     6 1s   -0.42714
+   34.1     0.00000     2.72478     1 3d1+  0.89918     2 3d1+  0.89918
+   35.1     0.00000     3.00533     1 2py   0.41802     1 3d1-  0.95444     2 2py  -0.41802     2 3d1-  0.95444     3 1s   -0.43965
+                                    4 1s    0.43965     5 1s    0.43965     6 1s   -0.43965
+   36.1     0.00000     3.06270     1 1s    0.31547     1 1s    2.01776     1 2pz  -0.79768     1 2pz  -1.16470     1 3d0   1.11187
+                                    2 1s   -0.31547     2 1s   -2.01776     2 2pz  -0.79768     2 2pz  -1.16470     2 3d0  -1.11187
+
+
+ HOMO      8.1    -0.355819 =      -9.6823eV
+ LUMO      9.1     0.165284 =       4.4976eV
+ LUMO-HOMO         0.521104 =      14.1800eV
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       30.88       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+              2       4        2.86       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL    HF-SCF       INT
+ CPU TIMES  *         0.49      0.13      0.26
+ REAL TIME  *         0.73 SEC
+ DISK USED  *        35.71 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)
+
+
+ Number of closed-shell orbitals:   7 (   7 )
+ Number of active  orbitals:        2 (   2 )
+ Number of external orbitals:      27 (  27 )
+
+ State symmetry 1
+
+ Number of electrons:     2    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        3
+ Number of CSFs:          3   (4 determinants, 4 intermediate states)
+
+ Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL (state 1.1)
+
+ Wavefunction dump at record             2140.2
+
+ Convergence thresholds  0.10E-01 (gradient)  0.10E-05 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.33333   0.33333   0.33333
+
+ Number of orbital rotations:      257   (    14 Core/Active    189 Core/Virtual   0 Active/Active     54 Active/Virtual)
+ Total number of variables:        269
+
+ Micro-Iterations solved by the two-step solver
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1    6    5    0     -77.75307628     -77.76373584   -0.01065956    0.12309580 0.00199926 0.00000000  0.10D+00      0.11
+   2    5    5    0     -77.76360605     -77.76361300   -0.00000696    0.00348247 0.00000102 0.00000000  0.40D-02      0.19
+   3    4    4    0     -77.76361301     -77.76361301   -0.00000000    0.00000581 0.00000000 0.00000000  0.14D-04      0.25
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.88D-10
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE  1.1 Energy             -78.027444121195
+ Nuclear energy                        33.16664546
+ Kinetic energy                        77.95843015
+ One electron energy                 -169.76622442
+ Two electron energy                   58.57213484
+ Virial ratio                           2.00088527
+
+ !MCSCF STATE  1.1 Dipole moment       -0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                  -0.00000000     0.00000000     0.00000000
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE  2.1 Energy             -77.715075198858
+ Nuclear energy                        33.16664546
+ Kinetic energy                        78.09690042
+ One electron energy                 -169.31428310
+ Two electron energy                   58.43256244
+ Virial ratio                           1.99511088
+
+ !MCSCF STATE  2.1 Dipole moment       -0.00000000     0.00000000    -0.00000000
+ Dipole moment /Debye                  -0.00000000     0.00000000    -0.00000000
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE  3.1 Energy             -77.548319722723
+ Nuclear energy                        33.16664546
+ Kinetic energy                        78.23537069
+ One electron energy                 -168.86234178
+ Two electron energy                   58.14737660
+ Virial ratio                           1.99121815
+
+ !MCSCF STATE  3.1 Dipole moment       -0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                  -0.00000000     0.00000000     0.00000000
+
+ State-averaged charge density matrix saved on record  2140.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMZ|1.1>    -1.141693424535 au =    -2.901705173929 Debye
+ !MCSCF trans         <3.1|DMZ|2.1>    -1.630291110172 au =    -4.143515279792 Debye
+
+
+ NATURAL ORBITALS (state averaged)
+ =================================
+
+  Orbital  Occupation    Energy     Coefficients
+    1.1     2.00000   -11.24096     1 1s    0.70421     2 1s    0.70421
+    2.1     2.00000   -11.23955     1 1s    0.70453     2 1s   -0.70453
+    3.1     2.00000    -1.03522     1 1s    0.30740     2 1s    0.30740
+    4.1     2.00000    -0.78956     1 1s    0.27802     2 1s   -0.27802
+    5.1     2.00000    -0.63700     1 2py   0.32281     2 2py   0.32281
+    6.1     2.00000    -0.58880     1 2pz   0.40672     2 2pz  -0.40672
+    7.1     2.00000    -0.52009     1 2py   0.25736     2 2py  -0.25736
+    8.1     1.00000     0.01626     1 2px   0.35829     1 2px   0.57466     2 2px  -0.35829     2 2px  -0.57466
+    9.1     1.00000    -0.20887     1 2px   0.31200     1 2px   0.29688     2 2px   0.31200     2 2px   0.29688
+   10.1    -0.00000     0.26155     1 1s   -1.44014     1 2pz  -0.63026     2 1s   -1.44014     2 2pz   0.63026     3 1s    1.01515
+                                    4 1s    1.01515     5 1s    1.01515     6 1s    1.01515
+   11.1    -0.00000     0.29079     1 2px  -0.45939     1 2py  -0.74371     2 2px   0.45939     2 2py  -0.74371     3 1s    1.06551
+                                    4 1s   -1.06551     5 1s    1.06551     6 1s   -1.06551
+   12.1    -0.00000     0.29572     1 1s   -1.82379     2 1s    1.82379     3 1s    1.04586     4 1s    1.04586     5 1s   -1.04586
+                                    6 1s   -1.04586
+   13.1    -0.00000     0.37967     1 2py  -1.78200     2 2py   1.78200     3 1s    1.54290     4 1s   -1.54290     5 1s   -1.54290
+                                    6 1s    1.54290
+   14.1    -0.00000     0.48211     1 1s   -3.05015     1 2pz   2.88583     2 1s    3.05015     2 2pz   2.88583     3 1s   -0.51574
+                                    4 1s   -0.51574     5 1s    0.51574     6 1s    0.51574
+   15.1    -0.00000     0.66049     1 2pz  -0.55207     1 2pz   1.01339     2 2pz   0.55207     2 2pz  -1.01339
+   16.1    -0.00000     0.77785     1 2py  -0.42093     1 2px   0.30108     1 2py   0.77821     2 2py  -0.42093     2 2px  -0.30108
+                                    2 2py   0.77821     3 1s   -0.38634     4 1s    0.38634     5 1s   -0.38634     6 1s    0.38634
+   17.1    -0.00000     0.77844     1 2px  -0.72868     1 2px   0.63711     2 2px  -0.72868     2 2px   0.63711
+   18.1    -0.00000     0.86392     1 1s   -0.84979     1 1s    1.38832     1 2pz   0.34143     2 1s   -0.84979     2 1s    1.38832
+                                    2 2pz  -0.34143     3 1s   -0.41624     4 1s   -0.41624     5 1s   -0.41624     6 1s   -0.41624
+   19.1    -0.00000     0.86910     1 2px  -0.77824     1 2px   1.07691     2 2px   0.77824     2 2px  -1.07691
+   20.1    -0.00000     0.93800     1 1s   -0.77611     1 2pz   0.61013     1 2pz  -0.42324     2 1s    0.77611     2 2pz   0.61013
+                                    2 2pz  -0.42324     3 1s    0.38339     4 1s    0.38339     5 1s   -0.38339     6 1s   -0.38339
+   21.1    -0.00000     1.09602     1 2py  -0.65779     1 2px   0.37980     1 2py   1.07656     2 2py  -0.65779     2 2px  -0.37980
+                                    2 2py   1.07656     3 1s    0.38090     3 1s   -1.06020     4 1s   -0.38090     4 1s    1.06020
+                                    5 1s    0.38090     5 1s   -1.06020     6 1s   -0.38090     6 1s    1.06020
+   22.1    -0.00000     1.12934     1 2py   0.89549     1 2px  -0.36765     1 2py  -2.83975     2 2py  -0.89549     2 2px  -0.36765
+                                    2 2py   2.83975     3 1s    1.42827     4 1s   -1.42827     5 1s   -1.42827     6 1s    1.42827
+   23.1    -0.00000     1.19344     1 1s    1.05892     1 1s   -1.76698     1 2pz   0.36116     1 2pz  -0.50881     2 1s    1.05892
+                                    2 1s   -1.76698     2 2pz  -0.36116     2 2pz   0.50881     3 1s   -0.42437     3 1s    0.87593
+                                    4 1s   -0.42437     4 1s    0.87593     5 1s   -0.42437     5 1s    0.87593     6 1s   -0.42437
+                                    6 1s    0.87593
+   24.1    -0.00000     1.19456     1 1s   -0.55738     1 1s    0.62534     1 2pz  -0.61448     1 2pz   1.13834     2 1s    0.55738
+                                    2 1s   -0.62534     2 2pz  -0.61448     2 2pz   1.13834     3 1s    0.46231     3 1s   -0.94845
+                                    4 1s    0.46231     4 1s   -0.94845     5 1s   -0.46231     5 1s    0.94845     6 1s   -0.46231
+                                    6 1s    0.94845
+   25.1    -0.00000     1.31944     1 1s   -1.56986     1 1s    5.34028     1 2pz   0.28139     1 2pz  -1.99985     2 1s    1.56986
+                                    2 1s   -5.34028     2 2pz   0.28139     2 2pz  -1.99985     3 1s   -0.26787     4 1s   -0.26787
+                                    5 1s    0.26787     6 1s    0.26787
+   26.1    -0.00000     1.35776     1 2py   1.84915     2 2py  -1.84915     3 1s   -0.63209     3 1s   -0.34505     4 1s    0.63209
+                                    4 1s    0.34505     5 1s    0.63209     5 1s    0.34505     6 1s   -0.63209     6 1s   -0.34505
+   27.1    -0.00000     1.81657     1 2py   1.20599     1 3d1+  0.58697     2 2py  -1.20599     2 3d1+ -0.58697     3 1s   -0.30325
+                                    3 1s   -0.36728     4 1s    0.30325     4 1s    0.36728     5 1s    0.30325     5 1s    0.36728
+                                    6 1s   -0.30325     6 1s   -0.36728
+   28.1    -0.00000     1.84800     1 1s    0.53652     1 3d2-  0.66067     2 1s   -0.53652     2 3d2-  0.66067
+   29.1    -0.00000     2.00236     1 1s   -0.34225     1 3d2-  0.45693     1 3d2+  0.54480     2 1s   -0.34225     2 3d2- -0.45693
+                                    2 3d2+  0.54480
+   30.1    -0.00000     2.27000     1 3d1-  0.67390     2 3d1- -0.67390     3 1s   -0.48847     4 1s    0.48847     5 1s   -0.48847
+                                    6 1s    0.48847
+   31.1    -0.00000     2.29215     1 1s   -0.27926     1 1s    0.48722     1 3d0   0.26677     1 3d2-  0.54760     1 3d2+ -0.42299
+                                    2 1s   -0.27926     2 1s    0.48722     2 3d0   0.26677     2 3d2- -0.54760     2 3d2+ -0.42299
+                                    3 1s   -0.28591     4 1s   -0.28591     5 1s   -0.28591     6 1s   -0.28591
+   32.1    -0.00000     2.40547     1 1s   -0.46247     1 2pz   0.26368     1 2pz  -0.45641     1 3d0   0.64991     2 1s   -0.46247
+                                    2 2pz  -0.26368     2 2pz   0.45641     2 3d0   0.64991
+   33.1    -0.00000     2.55793     1 1s    0.30824     1 1s   -1.38899     1 2pz   0.30874     1 3d2+  0.76453     2 1s   -0.30824
+                                    2 1s    1.38899     2 2pz   0.30874     2 3d2+ -0.76453     3 1s    0.42855     4 1s    0.42855
+                                    5 1s   -0.42855     6 1s   -0.42855
+   34.1    -0.00000     2.71045     1 3d1+  0.89840     2 3d1+  0.89840
+   35.1    -0.00000     2.99376     1 2py   0.41665     1 3d1-  0.95438     2 2py  -0.41665     2 3d1-  0.95438     3 1s   -0.44066
+                                    4 1s    0.44066     5 1s    0.44066     6 1s   -0.44066
+   36.1    -0.00000     3.04973     1 1s    0.31069     1 1s    2.03589     1 2pz  -0.79309     1 2pz  -1.17362     1 3d0   1.11288
+                                    2 1s   -0.31069     2 1s   -2.03589     2 2pz  -0.79309     2 2pz  -1.17362     2 3d0  -1.11288
+
+
+ Natural orbital dump (state averaged) at molpro section  2140.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       31.61       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+
+              2       5        5.42       700     1000      520     2100     2140   
+                                         GEOM     BASIS   MCVARS     RHF     MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI    HF-SCF       INT
+ CPU TIMES  *         0.81      0.31      0.13      0.26
+ REAL TIME  *         1.10 SEC
+ DISK USED  *        38.79 MB
+ **********************************************************************************************************************************
+ Molecular orbitals read from record     2140.2  Type=MCSCF/NATURAL (state averaged)
+ Occupation numbers read from record     2140.2  Type=MCSCF/NATURAL (state averaged)
+ Orbital energies read from record       2140.2  Type=MCSCF/NATURAL (state averaged)
+ Redundancy group numbers read from rec  2140.2  Type=MCSCF/NATURAL (state averaged)
+
+ MULTI/6-31G* energy=    -77.548319722723
+
+           MULTI          HF-SCF
+    -77.54831972    -78.01633576
+ **********************************************************************************************************************************
+ Molpro calculation terminated
