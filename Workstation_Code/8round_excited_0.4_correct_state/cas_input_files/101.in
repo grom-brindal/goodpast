@@ -1,0 +1,24 @@
+!leave this line blank
+
+gprint, orbitals=30
+memory, 125., m
+symmetry, nosym
+nelect=16
+basis=6-31g*
+
+geometry={
+C -0.799 0.121 0.296
+C 0.807 -0.171 -0.356
+H -1.304 0.957 0.107
+H -1.473 -0.873 0.184
+H 1.482 0.823 -0.244
+H 1.313 -1.007 -0.168
+}
+
+hf
+{multi,
+closed 7
+occ 9
+wf,spin=0;STATE,3
+}
+

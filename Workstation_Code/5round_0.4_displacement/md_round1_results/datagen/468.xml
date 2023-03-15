@@ -1,0 +1,2096 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <!--
+
+ Primary working directories    : /scratch.local/johan406.molpro_temp/molpro.XP6pzdyUrC
+ Secondary working directories  : /scratch.local/johan406.molpro_temp/molpro.XP6pzdyUrC
+ Wavefunction directory         : /home/goodpast/johan406/wfu/
+ Main file repository           : /scratch.local/johan406.molpro_temp/molpro.XP6pzdyUrC/
+
+ id        : roweumn
+
+ Nodes     nprocs
+ cn0416       1
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (934), CPU time= 0.01 sec
+ --><job>
+  <!--
+                                                                                 !leave this line blank
+ 
+ gprint, orbitals=30
+ memory, 125., m
+ symmetry, nosym
+ nelect=16
+ basis=6-31g*
+ 
+ geometry={
+ C 0.000 0.000 0.677
+ C 0.000 -0.000 -0.677
+ H 0.000 0.915 1.232
+ H 0.000 -0.916 1.231
+ H 0.000 0.916 -1.231
+ H 0.000 -0.915 -1.232
+ }
+ 
+ hf
+ {multi,
+ closed 7
+ occ 9
+ wf,spin=0;STATE,3
+ }
+ 
+ Commands  initialized (763), CPU time= 0.01 sec, 617 directives.
+ Default parameters read. Elapsed time= 0.04 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2019.2 linked Oct 25 2019 22:50:27
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                 
+  64 bit serial version                                                                  DATE: 15-Mar-23          TIME: 16:58:05  
+ **********************************************************************************************************************************
+
+ SHA1:             8dbd9ae1082e4ce945b0f27595c9eb2d4aa09004
+ **********************************************************************************************************************************
+  -->
+  <!--
+
+
+ Variable memory set to  125000000 words,  buffer space 
+
+ SETTING NELECT         =        16.00000000                                  
+ SETTING BASIS          =    6-31G*
+ ZSYMEL=NOSYM
+
+
+Geometry recognized as XYZ
+
+  --><jobstep command="HF-SCF" commandset="SCFPRO">
+   <!--
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry C      S 6-31G                selected for orbital group  1
+ Library entry C      P 6-31G                selected for orbital group  1
+ Library entry C      D 6-31G*               selected for orbital group  1
+ Library entry H      S 6-31G                selected for orbital group  2
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+   --><cml:molecule>
+    <cml:symmetry pointGroup="C1"/>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.0" y3="0.0" z3="0.677"/>
+     <cml:atom id="a2" elementType="C" x3="0.0" y3="0.0" z3="-0.677"/>
+     <cml:atom id="a3" elementType="H" x3="0.0" y3="0.915" z3="1.232"/>
+     <cml:atom id="a4" elementType="H" x3="0.0" y3="-0.916" z3="1.231"/>
+     <cml:atom id="a5" elementType="H" x3="0.0" y3="0.916" z3="-1.231"/>
+     <cml:atom id="a6" elementType="H" x3="0.0" y3="-0.915" z3="-1.232"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a2 a5"/>
+     <cml:bond atomRefs2="a2 a6"/>
+    </cml:bondArray>
+   </cml:molecule><!--
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  C       6.00    0.000000000    0.000000000    1.279344586
+   2  C       6.00    0.000000000   -0.000000000   -1.279344586
+   3  H       1.00    0.000000000    1.729099404    2.328142585
+   4  H       1.00    0.000000000   -1.730989130    2.326252859
+   5  H       1.00    0.000000000    1.730989130   -2.326252859
+   6  H       1.00    0.000000000   -1.729099404   -2.328142585
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.558689173  1-3  2.022315997  1-4  2.022953361  2-5  2.022953361  2-6  2.022315997
+     ( 1.354000000)     ( 1.070163539)     ( 1.070500817)     ( 1.070500817)     ( 1.070163539)
+
+ Bond angles
+
+  1-2-5  121.16569532   1-2-6  121.23921489   2-1-3  121.23921489   2-1-4  121.16569532
+
+  3-1-4  117.59508979   5-2-6  117.59508979
+
+ NUCLEAR CHARGE:                   16
+ NUMBER OF PRIMITIVE AOS:          72
+ NUMBER OF SYMMETRY AOS:           70
+ NUMBER OF CONTRACTIONS:           36   (   36A   )
+ NUMBER OF CORE ORBITALS:           2   (    2A   )
+ NUMBER OF VALENCE ORBITALS:       12   (   12A   )
+
+
+ NUCLEAR REPULSION ENERGY   33.28794963
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 2 1 1 2 1 1 1   2 2 1 1 1 1 1 2 1 1   2 1 1 1 2 2 1 1 1 1   1 1 1 1 1 1
+
+ Eigenvalues of metric
+
+         1 0.871E-02 0.170E-01 0.377E-01 0.462E-01 0.693E-01 0.203E+00 0.211E+00 0.229E+00
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.786 MB (compressed) written to integral file ( 37.9%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:     222111.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:     222111      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.78 MW
+
+ SORT1 READ      284735. AND WROTE       98699. INTEGRALS IN      1 RECORDS. CPU TIME:     0.01 SEC, REAL TIME:     0.01 SEC
+ SORT2 READ       98699. AND WROTE      222111. INTEGRALS IN      3 RECORDS. CPU TIME:     0.02 SEC, REAL TIME:     0.02 SEC
+
+ FILE SIZES:   FILE 1:    30.9 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:     35.1 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       30.63       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.30      0.21
+ REAL TIME  *         0.49 SEC
+ DISK USED  *        35.45 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * RHF-SCF (CLOSED SHELL)       Authors: W. Meyer, H.-J. Werner
+
+
+ NUMBER OF ELECTRONS:       8+    8-    SPACE SYMMETRY=1    SPIN SYMMETRY: Singlet 
+ CONVERGENCE THRESHOLDS:    1.00E-05 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Orbital guess generated from atomic densities. Full valence occupancy:    8
+
+ Molecular orbital dump at record        2100.2
+
+ Initial occupancy:   8
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   ORB.
+    1      0.000D+00      0.000D+00       -78.00594375    118.424179    0.00000   -0.00000    0.00000    0    start
+    2      0.000D+00      0.844D-02       -78.02740853    116.673585    0.00000   -0.00000    0.00000    1    diag
+    3      0.810D-02      0.282D-02       -78.02942061    117.276507   -0.00000    0.00000   -0.00000    2    diag
+    4      0.255D-02      0.703D-03       -78.02962278    117.177546   -0.00000    0.00000    0.00000    3    diag
+    5      0.104D-02      0.658D-04       -78.02962474    117.180325   -0.00000    0.00000   -0.00000    4    diag
+    6      0.141D-03      0.739D-05       -78.02962477    117.179924   -0.00000    0.00000    0.00000    5    diag
+    7      0.136D-04      0.109D-05       -78.02962477    117.179932   -0.00000   -0.00000    0.00000    6    diag
+    8      0.156D-05      0.122D-06       -78.02962477    117.179926    0.00000    0.00000    0.00000    0    orth
+
+ Final occupancy:   8
+
+ !RHF STATE  1.1 Energy               -78.029624770029
+   --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-78.0296247700295"/><!--
+ Nuclear energy                        33.28794963
+ One-electron energy                 -169.90753763
+ Two-electron energy                   58.58996323
+ Virial quotient                       -1.00028028
+ !RHF STATE  1.1 Dipole moment          0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000     0.00000000
+   --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+     stateNumber="1"
+     value="0.661055635035837E-15 0.591193760612896E-14 0.323352455922077E-13"/><!--
+
+ ELECTRON ORBITALS
+ =================
+
+  Orbital  Occupation    Energy     Coefficients
+    1.1     2.00000   -11.22592     1 1s    0.70421     2 1s    0.70421
+    2.1     2.00000   -11.22444     1 1s    0.70453     2 1s   -0.70453
+    3.1     2.00000    -1.02337     1 1s    0.30134     2 1s    0.30134
+    4.1     2.00000    -0.79476     2 1s   -0.24110
+    5.1     2.00000    -0.64058     1 2py   0.32179     2 2py   0.32179
+    6.1     2.00000    -0.57834     1 2pz   0.40766     2 2pz  -0.40766
+    7.1     2.00000    -0.51120     1 2py   0.30765     2 2py  -0.30765
+    8.1     2.00000    -0.36520     1 2px   0.37158     1 2px   0.31119     2 2px   0.37158     2 2px   0.31119
+    9.1     0.00000     0.17506     1 2px   0.34348     1 2px   0.72408     2 2px  -0.34348     2 2px  -0.72408
+   10.1     0.00000     0.26641     1 1s   -1.50235     1 2pz  -0.63813     2 1s   -1.50235     2 2pz   0.63813     3 1s    1.04300
+                                    4 1s    1.04333     5 1s    1.04333     6 1s    1.04300
+   11.1     0.00000     0.29773     1 2py   0.25069     1 2py   0.82767     2 2py   0.25069     2 2py   0.82767     3 1s   -1.12044
+                                    4 1s    1.11984     5 1s   -1.11984     6 1s    1.12044
+   12.1     0.00000     0.31102     1 1s    1.96171     2 1s   -1.96171     3 1s   -1.08071     4 1s   -1.08086     5 1s    1.08086
+                                    6 1s    1.08071
+   13.1     0.00000     0.39020     1 2py  -1.87867     2 2py   1.87867     3 1s    1.64740     4 1s   -1.64504     5 1s   -1.64504
+                                    6 1s    1.64740
+   14.1     0.00000     0.48549     1 1s   -2.79645     1 2pz   2.86001     2 1s    2.79645     2 2pz   2.86001     3 1s   -0.58768
+                                    4 1s   -0.58533     5 1s    0.58533     6 1s    0.58768
+   15.1     0.00000     0.67320     1 1s    0.27748     1 2pz  -0.55912     1 2pz   1.03228     2 1s    0.27748     2 2pz   0.55912
+                                    2 2pz  -1.03228
+   16.1     0.00000     0.76070     1 2py  -0.39769     1 2py   0.78895     2 2py  -0.39769     2 2py   0.78895     3 1s   -0.38442
+                                    4 1s    0.38337     5 1s   -0.38337     6 1s    0.38442
+   17.1     0.00000     0.78083     1 2px  -0.74426     1 2px   0.63956     2 2px  -0.74426     2 2px   0.63956
+   18.1     0.00000     0.86105     1 1s   -0.89344     1 1s    1.45638     1 2pz   0.29716     2 1s   -0.89344     2 1s    1.45638
+                                    2 2pz  -0.29716     3 1s   -0.39105     4 1s   -0.39100     5 1s   -0.39100     6 1s   -0.39105
+   19.1     0.00000     0.88871     1 2px  -0.81696     1 2px   1.06807     2 2px   0.81696     2 2px  -1.06807
+   20.1     0.00000     0.94418     1 1s   -0.78997     1 2pz   0.61686     1 2pz  -0.52399     2 1s    0.78997     2 2pz   0.61686
+                                    2 2pz  -0.52399     3 1s    0.37291     4 1s    0.37378     5 1s   -0.37378     6 1s   -0.37291
+   21.1     0.00000     1.12645     1 2py  -0.69550     1 2py   1.10764     2 2py  -0.69550     2 2py   1.10764     3 1s    0.38305
+                                    3 1s   -1.06514     4 1s   -0.38528     4 1s    1.06864     5 1s    0.38528     5 1s   -1.06864
+                                    6 1s   -0.38305     6 1s    1.06514
+   22.1     0.00000     1.16226     1 2py   0.92590     1 2py  -2.97534     2 2py  -0.92590     2 2py   2.97534     3 1s    1.53594
+                                    4 1s   -1.53733     5 1s   -1.53733     6 1s    1.53594
+   23.1     0.00000     1.21879     1 1s    1.03917     1 1s   -1.73669     1 2pz   0.36435     1 2pz  -0.49343     2 1s    1.03917
+                                    2 1s   -1.73669     2 2pz  -0.36435     2 2pz   0.49343     3 1s   -0.43941     3 1s    0.87331
+                                    4 1s   -0.43953     4 1s    0.86584     5 1s   -0.43953     5 1s    0.86584     6 1s   -0.43941
+                                    6 1s    0.87331
+   24.1     0.00000     1.22308     1 1s   -0.43465     1 2pz  -0.62856     1 2pz   1.33265     2 1s    0.43465     2 2pz  -0.62856
+                                    2 2pz   1.33265     3 1s    0.48310     3 1s   -0.95364     4 1s    0.48161     4 1s   -0.94920
+                                    5 1s   -0.48161     5 1s    0.94920     6 1s   -0.48310     6 1s    0.95364
+   25.1     0.00000     1.33012     1 1s   -1.62107     1 1s    5.32696     1 2pz  -1.80257     2 1s    1.62107     2 1s   -5.32696
+                                    2 2pz  -1.80257     3 1s   -0.39911     4 1s   -0.40013     5 1s    0.40013     6 1s    0.39911
+   26.1     0.00000     1.48018     1 2py   2.52228     2 2py  -2.52228     3 1s   -0.70020     3 1s   -0.67773     4 1s    0.69936
+                                    4 1s    0.67618     5 1s    0.69936     5 1s    0.67618     6 1s   -0.70020     6 1s   -0.67773
+   27.1     0.00000     1.73423     1 3d1+  0.62115     2 3d1+ -0.62115
+   28.1     0.00000     1.82588     1 3d2-  0.68266     2 3d2-  0.68266
+   29.1     0.00000     2.12002     1 3d2-  0.73438     2 3d2- -0.73438
+   30.1     0.00000     2.21878     1 1s   -0.61258     1 3d2+  0.70627     2 1s   -0.61258     2 3d2+  0.70627     3 1s    0.36739
+                                    4 1s    0.36824     5 1s    0.36824     6 1s    0.36739
+   31.1     0.00000     2.33458     1 2py   0.27605     1 3d1-  0.69604     2 2py   0.27605     2 3d1- -0.69604     3 1s   -0.52413
+                                    4 1s    0.52339     5 1s   -0.52339     6 1s    0.52413
+   32.1     0.00000     2.39514     1 1s   -0.49284     1 2pz   0.27337     1 2pz  -0.44747     1 3d0   0.67533     2 1s   -0.49284
+                                    2 2pz  -0.27337     2 2pz   0.44747     2 3d0   0.67533
+   33.1     0.00000     2.63185     1 1s    0.28573     1 1s   -1.36055     1 2pz   0.29070     1 3d2+  0.80025     2 1s   -0.28573
+                                    2 1s    1.36055     2 2pz   0.29070     2 3d2+ -0.80025     3 1s    0.45226     4 1s    0.45263
+                                    5 1s   -0.45263     6 1s   -0.45226
+   34.1     0.00000     2.69176     1 2px  -0.26162     1 3d1+  0.89309     2 2px   0.26162     2 3d1+  0.89309
+   35.1     0.00000     3.04463     1 1s    0.26772     1 1s    1.98972     1 2pz  -0.75528     1 2pz  -1.16593     1 3d0   1.10140
+                                    2 1s   -0.26772     2 1s   -1.98972     2 2pz  -0.75528     2 2pz  -1.16593     2 3d0  -1.10140
+   36.1     0.00000     3.04576     1 2py   0.58972     1 3d1-  0.96096     2 2py  -0.58972     2 3d1-  0.96096     3 1s   -0.48487
+                                    4 1s    0.48359     5 1s    0.48359     6 1s   -0.48487
+
+
+ HOMO      8.1    -0.365195 =      -9.9375eV
+ LUMO      9.1     0.175062 =       4.7637eV
+ LUMO-HOMO         0.540257 =      14.7011eV
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       30.63       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+              2       4        2.86       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL    HF-SCF       INT
+ CPU TIMES  *         0.39      0.10      0.21
+ REAL TIME  *         0.63 SEC
+ DISK USED  *        35.45 MB
+ **********************************************************************************************************************************
+   -->
+   <time start="16:58:05" end="16:58:06" cpu="0.39" system="0.19" real="0.63"/>
+   <storage units="megabyte" memory="0.0" sf="0.0" df="35.45" eaf="0.0"/>
+  </jobstep><!--
+  --><jobstep command="MULTI" commandset="MULTI">
+   <!--
+
+
+ PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)
+
+
+ Number of closed-shell orbitals:   7 (   7 )
+ Number of active  orbitals:        2 (   2 )
+ Number of external orbitals:      27 (  27 )
+
+ State symmetry 1
+
+ Number of electrons:     2    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        3
+ Number of CSFs:          3   (4 determinants, 4 intermediate states)
+
+ Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL (state 1.1)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 1 1 1 2 2 1   1 1 1 1 1 1 2 1 2 1   1 1 1 1 1 1 2 2 2 1   1 1 1 2 1 1
+
+ Wavefunction dump at record             2140.2
+
+ Convergence thresholds  0.10E-01 (gradient)  0.10E-05 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.33333   0.33333   0.33333
+
+ Number of orbital rotations:      257   (    14 Core/Active    189 Core/Virtual   0 Active/Active     54 Active/Virtual)
+ Total number of variables:        269
+
+ Micro-Iterations solved by the two-step solver
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1    3    3    0     -77.73454848     -77.74050148   -0.00595300    0.12926547 0.00000135 0.00000000  0.61D-01      0.06
+   2    2    3    0     -77.74041159     -77.74041492   -0.00000332    0.00286304 0.00000164 0.00000000  0.15D-02      0.08
+   3    2    3    0     -77.74041492     -77.74041492   -0.00000000    0.00000189 0.00000000 0.00000000  0.12D-05      0.11
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.96D-12
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE  1.1 Energy             -78.048237386820
+   --><property name="Energy" method="MCSCF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-78.0482373868202"/><!--
+ Nuclear energy                        33.28794963
+ Kinetic energy                        78.06958488
+ One electron energy                 -170.02305348
+ Two electron energy                   58.68686647
+ Virial ratio                           1.99972656
+
+ !MCSCF STATE  1.1 Dipole moment        0.00000000    -0.00000000    -0.00000000
+ Dipole moment /Debye                   0.00000000    -0.00000000    -0.00000000
+   --><property name="Dipole moment" method="MCSCF" principal="true" stateSymmetry="1"
+     stateNumber="1" value="0.0 -0.128528714892485E-13 -0.138913017458921E-12"/><!--
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE  2.1 Energy             -77.676301520165
+   --><property name="Energy" method="MCSCF" principal="true" stateSymmetry="1" stateNumber="2"
+     value="-77.6763015201652"/><!--
+ Nuclear energy                        33.28794963
+ Kinetic energy                        78.25553226
+ One electron energy                 -169.48141619
+ Two electron energy                   58.51716505
+ Virial ratio                           1.99259821
+
+ !MCSCF STATE  2.1 Dipole moment        0.00000000    -0.00000000    -0.00000000
+ Dipole moment /Debye                   0.00000000    -0.00000000    -0.00000000
+   --><property name="Dipole moment" method="MCSCF" principal="true" stateSymmetry="1"
+     stateNumber="2" value="0.0 -0.134037696718483E-13 -0.190682588037993E-12"/><!--
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE  3.1 Energy             -77.496705846500
+   --><property name="Energy" method="MCSCF" principal="true" stateSymmetry="1" stateNumber="3"
+     value="-77.4967058465004"/><!--
+ Nuclear energy                        33.28794963
+ Kinetic energy                        78.44147963
+ One electron energy                 -168.93977890
+ Two electron energy                   58.15512343
+ Virial ratio                           1.98795569
+
+ !MCSCF STATE  3.1 Dipole moment        0.00000000    -0.00000000    -0.00000000
+ Dipole moment /Debye                   0.00000000    -0.00000000    -0.00000000
+   --><property name="Dipole moment" method="MCSCF" principal="true" stateSymmetry="1"
+     stateNumber="3" value="0.0 -0.139536076026462E-13 -0.342655584241565E-13"/><!--
+
+ State-averaged charge density matrix saved on record  2140.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMY|1.1>    -0.000007699697 au =    -0.000019569396 Debye
+   --><property name="DMY" method="MCSCF" principal="true" braStateSymmetry="1"
+     braStateNumber="2" ketStateSymmetry="1" ketStateNumber="1"
+     value="-0.769969718742875E-05" origin="0.0 0.0 0.0"/><!--
+ !MCSCF trans         <3.1|DMY|2.1>    -0.000011731905 au =    -0.000029817575 Debye
+   --><property name="DMY" method="MCSCF" principal="true" braStateSymmetry="1"
+     braStateNumber="3" ketStateSymmetry="1" ketStateNumber="2"
+     value="-0.117319049850152E-04" origin="0.0 0.0 0.0"/><!--
+
+ !MCSCF trans         <2.1|DMZ|1.1>    -1.511880269303 au =    -3.842564654854 Debye
+   --><property name="DMZ" method="MCSCF" principal="true" braStateSymmetry="1"
+     braStateNumber="2" ketStateSymmetry="1" ketStateNumber="1"
+     value="-1.51188026930267" origin="0.0 0.0 0.0"/><!--
+ !MCSCF trans         <3.1|DMZ|2.1>    -2.303627692935 au =    -5.854854071811 Debye
+   --><property name="DMZ" method="MCSCF" principal="true" braStateSymmetry="1"
+     braStateNumber="3" ketStateSymmetry="1" ketStateNumber="2"
+     value="-2.30362769293544" origin="0.0 0.0 0.0"/><!--
+
+
+ NATURAL ORBITALS (state averaged)
+ =================================
+
+  Orbital  Occupation    Energy     Coefficients
+    1.1     2.00000   -11.24057     1 1s    0.70422     2 1s    0.70422
+    2.1     2.00000   -11.23936     1 1s    0.70449     2 1s   -0.70449
+    3.1     2.00000    -1.03712     1 1s    0.30923     2 1s    0.30923
+    4.1     2.00000    -0.80230     1 1s    0.28484     2 1s   -0.28484
+    5.1     2.00000    -0.65284     1 2py   0.32711     2 2py   0.32711
+    6.1     2.00000    -0.59318     1 2pz   0.40950     2 2pz  -0.40950
+    7.1     2.00000    -0.51761     1 2py   0.31379     2 2py  -0.31379
+    8.1     1.00000    -0.22212     1 2px   0.35589     1 2px   0.32285     2 2px   0.35589     2 2px   0.32285
+    9.1     1.00000     0.03088     1 2px   0.38032     1 2px   0.67864     2 2px  -0.38032     2 2px  -0.67864
+   10.1    -0.00000     0.26372     1 1s   -1.49846     1 2pz  -0.64410     2 1s   -1.49846     2 2pz   0.64410     3 1s    1.04243
+                                    4 1s    1.04299     5 1s    1.04299     6 1s    1.04243
+   11.1    -0.00000     0.28965     1 2py   0.81888     2 2py   0.81888     3 1s   -1.11209     4 1s    1.11204     5 1s   -1.11204
+                                    6 1s    1.11209
+   12.1    -0.00000     0.30800     1 1s    1.98657     2 1s   -1.98657     3 1s   -1.07518     4 1s   -1.07480     5 1s    1.07480
+                                    6 1s    1.07518
+   13.1    -0.00000     0.38630     1 2py  -1.86522     2 2py   1.86522     3 1s    1.64101     4 1s   -1.63849     5 1s   -1.63849
+                                    6 1s    1.64101
+   14.1    -0.00000     0.48267     1 1s   -2.77167     1 2pz   2.84113     2 1s    2.77167     2 2pz   2.84113     3 1s   -0.59794
+                                    4 1s   -0.59555     5 1s    0.59555     6 1s    0.59794
+   15.1    -0.00000     0.66260     1 2pz  -0.55254     1 2pz   1.00988     2 2pz   0.55254     2 2pz  -1.00988
+   16.1    -0.00000     0.75026     1 2py  -0.40854     1 2py   0.79489     2 2py  -0.40854     2 2py   0.79489     3 1s   -0.38014
+                                    4 1s    0.37909     5 1s   -0.37909     6 1s    0.38014
+   17.1    -0.00000     0.77496     1 2px  -0.75107     1 2px   0.63408     2 2px  -0.75107     2 2px   0.63408
+   18.1    -0.00000     0.85795     1 1s   -0.88764     1 1s    1.48341     1 2pz   0.34636     2 1s   -0.88764     2 1s    1.48341
+                                    2 2pz  -0.34636     3 1s   -0.39353     4 1s   -0.39351     5 1s   -0.39351     6 1s   -0.39353
+   19.1    -0.00000     0.87162     1 2px  -0.80169     1 2px   1.09735     2 2px   0.80169     2 2px  -1.09735
+   20.1    -0.00000     0.92576     1 1s   -0.63882     1 2pz   0.62003     1 2pz  -0.60401     2 1s    0.63882     2 2pz   0.62003
+                                    2 2pz  -0.60401     3 1s    0.37375     4 1s    0.37462     5 1s   -0.37462     6 1s   -0.37375
+   21.1    -0.00000     1.11138     1 2py  -0.68452     1 2py   1.10971     2 2py  -0.68452     2 2py   1.10971     3 1s    0.38352
+                                    3 1s   -1.07402     4 1s   -0.38557     4 1s    1.07718     5 1s    0.38557     5 1s   -1.07718
+                                    6 1s   -0.38352     6 1s    1.07402
+   22.1    -0.00000     1.15022     1 2py   0.92308     1 2py  -2.97991     2 2py  -0.92308     2 2py   2.97991     3 1s    1.54367
+                                    4 1s   -1.54472     5 1s   -1.54472     6 1s    1.54367
+   23.1    -0.00000     1.21580     1 1s    1.03425     1 1s   -1.73258     1 2pz   0.36826     1 2pz  -0.49916     2 1s    1.03425
+                                    2 1s   -1.73258     2 2pz  -0.36826     2 2pz   0.49916     3 1s   -0.43987     3 1s    0.87249
+                                    4 1s   -0.44004     4 1s    0.86556     5 1s   -0.44004     5 1s    0.86556     6 1s   -0.43987
+                                    6 1s    0.87249
+   24.1    -0.00000     1.22030     1 1s   -0.34703     1 2pz  -0.64341     1 2pz   1.42908     2 1s    0.34703     2 2pz  -0.64341
+                                    2 2pz   1.42908     3 1s    0.48544     3 1s   -0.93048     4 1s    0.48410     4 1s   -0.92636
+                                    5 1s   -0.48410     5 1s    0.92636     6 1s   -0.48544     6 1s    0.93048
+   25.1    -0.00000     1.31150     1 1s   -1.64377     1 1s    5.34095     1 2pz  -1.72577     2 1s    1.64377     2 1s   -5.34095
+                                    2 2pz  -1.72577     3 1s   -0.45203     4 1s   -0.45288     5 1s    0.45288     6 1s    0.45203
+   26.1    -0.00000     1.47165     1 2py   2.52559     2 2py  -2.52559     3 1s   -0.69902     3 1s   -0.67887     4 1s    0.69818
+                                    4 1s    0.67733     5 1s    0.69818     5 1s    0.67733     6 1s   -0.69902     6 1s   -0.67887
+   27.1    -0.00000     1.70950     1 3d1+  0.62091     2 3d1+ -0.62091
+   28.1    -0.00000     1.81268     1 3d2-  0.68266     2 3d2-  0.68266
+   29.1    -0.00000     2.09762     1 3d2-  0.73438     2 3d2- -0.73438
+   30.1    -0.00000     2.20392     1 1s   -0.60836     1 3d2+  0.70537     2 1s   -0.60836     2 3d2+  0.70537     3 1s    0.36881
+                                    4 1s    0.36965     5 1s    0.36965     6 1s    0.36881
+   31.1    -0.00000     2.31902     1 2py   0.28291     1 3d1-  0.69429     2 2py   0.28291     2 3d1- -0.69429     3 1s   -0.52749
+                                    4 1s    0.52674     5 1s   -0.52674     6 1s    0.52749
+   32.1    -0.00000     2.37554     1 1s   -0.49061     1 2pz   0.27883     1 2pz  -0.45063     1 3d0   0.67471     2 1s   -0.49061
+                                    2 2pz  -0.27883     2 2pz   0.45063     2 3d0   0.67471
+   33.1    -0.00000     2.61281     1 1s    0.28654     1 1s   -1.36622     1 2pz   0.28960     1 3d2+  0.79951     2 1s   -0.28654
+                                    2 1s    1.36622     2 2pz   0.28960     2 3d2+ -0.79951     3 1s    0.45527     4 1s    0.45565
+                                    5 1s   -0.45565     6 1s   -0.45527
+   34.1    -0.00000     2.66973     1 2px  -0.26226     1 3d1+  0.89345     2 2px   0.26226     2 3d1+  0.89345
+   35.1    -0.00000     3.02736     1 1s    0.26079     1 1s    2.01431     1 2pz  -0.74792     1 2pz  -1.17874     1 3d0   1.10294
+                                    2 1s   -0.26079     2 1s   -2.01431     2 2pz  -0.74792     2 2pz  -1.17874     2 3d0  -1.10294
+   36.1    -0.00000     3.03343     1 2py   0.59003     1 3d1-  0.96054     2 2py  -0.59003     2 3d1-  0.96054     3 1s   -0.48718
+                                    4 1s    0.48590     5 1s    0.48590     6 1s   -0.48718
+
+
+ Natural orbital dump (state averaged) at molpro section  2140.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       31.36       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+
+              2       5        5.42       700     1000      520     2100     2140   
+                                         GEOM     BASIS   MCVARS     RHF     MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI    HF-SCF       INT
+ CPU TIMES  *         0.54      0.14      0.10      0.21
+ REAL TIME  *         0.85 SEC
+ DISK USED  *        38.55 MB
+ **********************************************************************************************************************************
+   -->
+   <time start="16:58:06" end="16:58:06" cpu="0.15" system="0.02" real="0.22"/>
+   <storage units="megabyte" memory="0.0" sf="0.0" df="38.55" eaf="0.0"/>
+  </jobstep><!--
+  --><molecule id="M349596F" method="MULTI" basis="6-31G*" energy="-77.4967058465004">
+   <cml:molecule id="M349596F" spinMultiplicity="1" formalCharge="0">
+    <cml:symmetry pointGroup="C1" irreducibleRepresentation="1"/>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.0" y3="0.0" z3="0.677"/>
+     <cml:atom id="a2" elementType="C" x3="0.0" y3="0.0" z3="-0.677"/>
+     <cml:atom id="a3" elementType="H" x3="0.0" y3="0.915" z3="1.232"/>
+     <cml:atom id="a4" elementType="H" x3="0.0" y3="-0.916" z3="1.231"/>
+     <cml:atom id="a5" elementType="H" x3="0.0" y3="0.916" z3="-1.231"/>
+     <cml:atom id="a6" elementType="H" x3="0.0" y3="-0.915" z3="-1.232"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a1 a4"/>
+     <cml:bond atomRefs2="a2 a5"/>
+     <cml:bond atomRefs2="a2 a6"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <basisSet id="ORBITAL" length="36" angular="spherical" type="gaussian" groups="20"
+     cartesianLength="38" primitives="72">
+    <basisGroup id="1" minL="0" maxL="0" primitives="6" angular="spherical" contractions="1">
+     <basisExponents>
+       3047.5249 457.36952 103.94868 29.210155 9.286663 3.163927
+     </basisExponents>
+     <basisContraction id="1">
+       0.183473709072481E-02 0.140373229290368E-01 0.688426216519784E-01 0.232184438826233 0.467941347634406 0.362311988168396
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="2" minL="0" maxL="0" primitives="3" angular="spherical" contractions="1">
+     <basisExponents>
+       7.8682723 1.8812885 0.54424926
+     </basisExponents>
+     <basisContraction id="1">
+       -0.119332424521602 -0.160854156094894 1.14345644332649
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="3" minL="0" maxL="0" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.16871448
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="4" minL="1" maxL="1" primitives="3" angular="spherical" contractions="1">
+     <basisExponents>
+       7.8682723 1.8812885 0.54424926
+     </basisExponents>
+     <basisContraction id="1">
+       0.68999066928922E-01 0.316423959674042 0.744308289233266
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="5" minL="1" maxL="1" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.16871448
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="6" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.8
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="7" minL="0" maxL="0" primitives="3" angular="spherical" contractions="1">
+     <basisExponents>
+       18.731137 2.8253944 0.64012169
+     </basisExponents>
+     <basisContraction id="1">
+       0.334946040048595E-01 0.234726950034055 0.813757330118061
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="8" minL="0" maxL="0" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.16127776
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <association xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended">
+     <bases xlink:type="locator" xlink:label="bases"
+       xlink:href="#xpointer(//molecule[@id='M349596F']//basisGroup[@id='1' or @id='2' or @id='3' or @id='4' or @id='5' or @id='6'])"/>
+     <atoms xlink:label="atoms"
+       xlink:href="#xpointer(//molecule[@id='M349596F']//atom[@id='a1' or @id='a2'])"/>
+     <associate xlink:type="arc" xlink:from="atoms" xlink:to="bases"/>
+    </association>
+    <association xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended">
+     <bases xlink:type="locator" xlink:label="bases"
+       xlink:href="#xpointer(//molecule[@id='M349596F']//basisGroup[@id='7' or @id='8'])"/>
+     <atoms xlink:label="atoms"
+       xlink:href="#xpointer(//molecule[@id='M349596F']//atom[@id='a3' or @id='a4' or @id='a5' or @id='a6'])"/>
+     <associate xlink:type="arc" xlink:from="atoms" xlink:to="bases"/>
+    </association>
+   </basisSet>
+   <variables>
+    <variable name="_NUMVAR" type="xsd:double" length="1">
+     <value>954.0</value>
+    </variable>
+    <variable name="_AVOGAD" type="xsd:double" units="1/MOL" length="1">
+     <value>0.6022136736E+24</value>
+    </variable>
+    <variable name="_BOLTZ" type="xsd:double" units="J/K" length="1">
+     <value>0.1380658E-22</value>
+    </variable>
+    <variable name="_CLIGHT" type="xsd:double" units="cm/s" length="1">
+     <value>29979245800.0</value>
+    </variable>
+    <variable name="_EV" type="xsd:double" units="HARTREE" length="1">
+     <value>0.36749323790852E-01</value>
+    </variable>
+    <variable name="_ENULL" type="xsd:double" units="C/Vm" length="1">
+     <value>0.8854187817E-11</value>
+    </variable>
+    <variable name="_KJOULE" type="xsd:double" units="HARTREE" length="1">
+     <value>0.380879832412874E-03</value>
+    </variable>
+    <variable name="_KJOULE/MOL" type="xsd:double" units="HARTREE" length="1">
+     <value>0.380879832412874E-03</value>
+    </variable>
+    <variable name="_CM" type="xsd:double" units="HARTREE" length="1">
+     <value>0.45563352673029E-05</value>
+    </variable>
+    <variable name="_CM-1" type="xsd:double" units="HARTREE" length="1">
+     <value>0.45563352673029E-05</value>
+    </variable>
+    <variable name="_DEB2SI" type="xsd:double" units="Cm" length="1">
+     <value>0.3335641E-29</value>
+    </variable>
+    <variable name="_AMU2AU" type="xsd:double" units="HARTREE" length="1">
+     <value>1822.88839</value>
+    </variable>
+    <variable name="_KCAL" type="xsd:double" units="HARTREE" length="1">
+     <value>0.159360111781557E-02</value>
+    </variable>
+    <variable name="_KCAL/MOL" type="xsd:double" units="HARTREE" length="1">
+     <value>0.159360111781557E-02</value>
+    </variable>
+    <variable name="_KELVIN" type="xsd:double" units="HARTREE" length="1">
+     <value>0.316681141106023E-05</value>
+    </variable>
+    <variable name="_JOULE" type="xsd:double" units="JOULE" length="1">
+     <value>0.43597482E-17</value>
+    </variable>
+    <variable name="_HERTZ" type="xsd:double" units="HARTREE" length="1">
+     <value>0.151982984600452E-15</value>
+    </variable>
+    <variable name="_HZ" type="xsd:double" units="HARTREE" length="1">
+     <value>0.151982984600452E-15</value>
+    </variable>
+    <variable name="_JPCAL" type="xsd:double" units="J/cal" length="1">
+     <value>4.184</value>
+    </variable>
+    <variable name="_PLANCK" type="xsd:double" units="Js" length="1">
+     <value>0.662607554E-33</value>
+    </variable>
+    <variable name="_TOA" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.52917721092</value>
+    </variable>
+    <variable name="_TOANG" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.52917721092</value>
+    </variable>
+    <variable name="_TORAD" type="xsd:double" units="RAD" length="1">
+     <value>0.174532925199433E-01</value>
+    </variable>
+    <variable name="_TOCM" type="xsd:double" units="CM-1" length="1">
+     <value>219474.63067</value>
+    </variable>
+    <variable name="_TODEBYE" type="xsd:double" units="DEBYE" length="1">
+     <value>2.54158</value>
+    </variable>
+    <variable name="_TOE" type="xsd:double" units="ESU" length="1">
+     <value>0.4803242E-09</value>
+    </variable>
+    <variable name="_TOEV" type="xsd:double" units="EV" length="1">
+     <value>27.21138505</value>
+    </variable>
+    <variable name="_TOHERTZ" type="xsd:double" units="HZ" length="1">
+     <value>0.6579683920729E+16</value>
+    </variable>
+    <variable name="_TOHZ" type="xsd:double" units="HZ" length="1">
+     <value>0.6579683920729E+16</value>
+    </variable>
+    <variable name="_TOK" type="xsd:double" units="K" length="1">
+     <value>315775.04</value>
+    </variable>
+    <variable name="_TOKCAL" type="xsd:double" units="KCAL/MOL" length="1">
+     <value>627.5096</value>
+    </variable>
+    <variable name="_TOKELVIN" type="xsd:double" units="K" length="1">
+     <value>315775.04</value>
+    </variable>
+    <variable name="_TOKJ" type="xsd:double" units="KJ/MOL" length="1">
+     <value>2625.5</value>
+    </variable>
+    <variable name="_TOKJOULE" type="xsd:double" units="KJ/MOL" length="1">
+     <value>2625.5</value>
+    </variable>
+    <variable name="_TOKG" type="xsd:double" units="KG" length="1">
+     <value>0.1660565586E-26</value>
+    </variable>
+    <variable name="_ANG" type="xsd:double" units="BOHR" length="1">
+     <value>1.88972612456506</value>
+    </variable>
+    <variable name="_ANGSTROM" type="xsd:double" units="BOHR" length="1">
+     <value>1.88972612456506</value>
+    </variable>
+    <variable name="_RPAREF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RPADISS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_IGNORE_UNDEF" type="xsd:double" length="1">
+     <value>2.0</value>
+    </variable>
+    <variable name="_STRICTCHECK" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SEWARD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!MULTI" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SEW_ONEEL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CPPDONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DKROLL_DONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FNUC_DONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FOCKDONE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_GRADONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HESSDONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_INTDONE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SCFDONE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_MODUL_BLOCK" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_CUDA" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_SLATER" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_MRCC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_NBO6" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_NECI" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_AIMS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_GECCO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_ISWINDOWS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MRCC_EXEC" type="xsd:string" length="1">
+     <value></value>
+    </variable>
+    <variable name="_FITC_AO_SAVED" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FITC_MO_SAVED" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SHARED_FS" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_LSTYP" type="xsd:string" length="1">
+     <value>SEWARD</value>
+    </variable>
+    <variable name="_INTYP" type="xsd:string" length="1">
+     <value>INTS</value>
+    </variable>
+    <variable name="_GEOMTYP" type="xsd:string" length="1">
+     <value>ZMAT</value>
+    </variable>
+    <variable name="_GRADTYP" type="xsd:string" length="1">
+     <value>ALASKA</value>
+    </variable>
+    <variable name="_DIRECT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DKHO" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_FNUC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SYNCM" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_BASIS" type="xsd:string" length="1">
+     <value>6-31G*</value>
+    </variable>
+    <variable name="_ZORIENT" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_NELEC" type="xsd:double" length="1">
+     <value>16.0</value>
+    </variable>
+    <variable name="!SPIN" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_QSDSTEP" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_QSDIRC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_PROGRAM" type="xsd:string" length="1">
+     <value>MULTI</value>
+    </variable>
+    <variable name="_CPUSTEP" type="xsd:double" units="SEC" length="1">
+     <value>0.15</value>
+    </variable>
+    <variable name="_SYSSTEP" type="xsd:double" units="SEC" length="1">
+     <value>0.2E-01</value>
+    </variable>
+    <variable name="_WALLSTEP" type="xsd:double" units="SEC" length="1">
+     <value>0.22</value>
+    </variable>
+    <variable name="!DFSCF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SCSGRD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CPUTOT" type="xsd:double" units="SEC" length="1">
+     <value>0.54</value>
+    </variable>
+    <variable name="_DFTEXFAC" type="xsd:double" units="AU" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_DMX" type="xsd:double" units="AU" length="3">
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMY" type="xsd:double" units="AU" length="3">
+     <value>-0.127998258074643E-13</value>
+     <value>-0.133507248855454E-13</value>
+     <value>-0.139005637118246E-13</value>
+    </variable>
+    <variable name="_DMZ" type="xsd:double" units="AU" length="3">
+     <value>-0.139083112455679E-12</value>
+     <value>-0.191076766681757E-12</value>
+     <value>-0.34883820714926E-13</value>
+    </variable>
+    <variable name="_DMX_SCF" type="xsd:double" units="AU" length="1">
+     <value>0.661055635035837E-15</value>
+    </variable>
+    <variable name="_DMY_SCF" type="xsd:double" units="AU" length="1">
+     <value>0.591193760612896E-14</value>
+    </variable>
+    <variable name="_DMZ_SCF" type="xsd:double" units="AU" length="1">
+     <value>0.323352455922077E-13</value>
+    </variable>
+    <variable name="_HOMO" type="xsd:double" length="1">
+     <value>8.1</value>
+    </variable>
+    <variable name="_EHOMO" type="xsd:double" length="1">
+     <value>-0.365195082226989</value>
+    </variable>
+    <variable name="_LUMO" type="xsd:double" length="1">
+     <value>9.1</value>
+    </variable>
+    <variable name="_ELUMO" type="xsd:double" length="1">
+     <value>0.175061555502252</value>
+    </variable>
+    <variable name="_ENERGY" type="xsd:double" units="HARTREE" length="3">
+     <value>-78.0482373868202</value>
+     <value>-77.6763015201652</value>
+     <value>-77.4967058465004</value>
+    </variable>
+    <variable name="_ENERGY_METHOD" type="xsd:string" length="1">
+     <value>MULTI</value>
+    </variable>
+    <variable name="_ENERGY_BASIS" type="xsd:string" length="1">
+     <value>6-31G*</value>
+    </variable>
+    <variable name="_GEOMETRY_METHOD" type="xsd:string" length="1">
+     <value></value>
+    </variable>
+    <variable name="_GEOMETRY_BASIS" type="xsd:string" length="1">
+     <value></value>
+    </variable>
+    <variable name="_ENUC" type="xsd:double" units="AU" length="1">
+     <value>33.2879496254408</value>
+    </variable>
+    <variable name="_GRADEXFAC" type="xsd:double" length="1">
+     <value>9999.0</value>
+    </variable>
+    <variable name="_GRADMETHOD" type="xsd:double" length="1">
+     <value>4.0</value>
+    </variable>
+    <variable name="_NMRMETHOD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NMRMAGNET" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!GRID_FREEZE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_ITERATIONS" type="xsd:double" length="1">
+     <value>3.0</value>
+    </variable>
+    <variable name="_LASTNELEC" type="xsd:double" length="1">
+     <value>2.0</value>
+    </variable>
+    <variable name="_LASTSPIN" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_LASTSYM" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_MPP_PROG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MSNSTATES" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RS2PHASE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_IPROC_MPP" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_IPROC_MPPX" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NPROC_MPP" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_NPROC_MPPX" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_NPROC_SMP" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_NUMSTEP" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_ORBITAL" type="xsd:double" length="1">
+     <value>2140.2</value>
+    </variable>
+    <variable name="_PI" type="xsd:double" length="1">
+     <value>3.14159265358979</value>
+    </variable>
+    <variable name="!MCACT" type="xsd:double" length="8">
+     <value>2.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="!MCCLOSED" type="xsd:double" length="8">
+     <value>7.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="!MCFREEZE" type="xsd:double" length="8">
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="!MCMS2" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!MCNEL" type="xsd:double" length="1">
+     <value>2.0</value>
+    </variable>
+    <variable name="!MCNSTSYM" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!MCSTATE" type="xsd:double" length="1">
+     <value>3.0</value>
+    </variable>
+    <variable name="!MCSYM" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!MCWEIGHT" type="xsd:double" length="3">
+     <value>0.333333333333333</value>
+     <value>0.333333333333333</value>
+     <value>0.333333333333333</value>
+    </variable>
+    <variable name="_SEIG_MIN" type="xsd:double" length="1">
+     <value>0.870572713123883E-02</value>
+    </variable>
+    <variable name="_SEWPROP" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_STATUS" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SYSTOT" type="xsd:double" units="SEC" length="1">
+     <value>0.21</value>
+    </variable>
+    <variable name="_VERSION" type="xsd:double" length="1">
+     <value>2019002.0</value>
+    </variable>
+    <variable name="_WALLTOT" type="xsd:double" units="SEC" length="1">
+     <value>0.85</value>
+    </variable>
+    <variable name="_DATE" type="xsd:string" length="1">
+     <value>15-Mar-23</value>
+    </variable>
+    <variable name="_LASTORB" type="xsd:string" length="1">
+     <value>MCSCF</value>
+    </variable>
+    <variable name="_OUTPUT" type="xsd:string" length="1">
+     <value>/panfs/jay/groups/27/goodpast/johan406/sorted_ethylene/optimizations/cas/gs/2round_gaussian/gs/md/1round/datagen/468.xml</value>
+    </variable>
+    <variable name="_PGROUP" type="xsd:string" length="1">
+     <value>C1</value>
+    </variable>
+    <variable name="_TIME" type="xsd:string" length="1">
+     <value>16:58:05</value>
+    </variable>
+    <variable name="_LIBMOL" type="xsd:string" length="1">
+     <value>/panfs/roc/msisoft/molpro/2019.2.3/lib/</value>
+    </variable>
+    <variable name="_VIGRDC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBCNT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!RGHFCNT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SURFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!XSURFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!XPOLYREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!ROTREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!POLYREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIPREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIP4DREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIPROT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIP4DROT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!PTREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!PT4DREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VSCFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VCIREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!PVCIREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VMP2REC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VMCSCFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VMRCIREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBSTATEREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBSTATECNT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBINFO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!GAREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SCFORB" type="xsd:double" length="1">
+     <value>21002.0</value>
+    </variable>
+    <variable name="!MCORB" type="xsd:double" length="1">
+     <value>21402.0</value>
+    </variable>
+    <variable name="!NEWMOL" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!NEWSYM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SLFILES" type="xsd:string" length="1">
+     <value>slscratch</value>
+    </variable>
+    <variable name="_NGSSTO" type="xsd:double" length="1">
+     <value>9.0</value>
+    </variable>
+    <variable name="_SIN" type="xsd:string" length="1">
+     <value>SIN</value>
+    </variable>
+    <variable name="_COS" type="xsd:string" length="1">
+     <value>COS</value>
+    </variable>
+    <variable name="_TAN" type="xsd:string" length="1">
+     <value>TAN</value>
+    </variable>
+    <variable name="_ACOS" type="xsd:string" length="1">
+     <value>ACOS</value>
+    </variable>
+    <variable name="_ASIN" type="xsd:string" length="1">
+     <value>ASIN</value>
+    </variable>
+    <variable name="_ATAN" type="xsd:string" length="1">
+     <value>ATAN</value>
+    </variable>
+    <variable name="_COSH" type="xsd:string" length="1">
+     <value>COSH</value>
+    </variable>
+    <variable name="_SINH" type="xsd:string" length="1">
+     <value>SINH</value>
+    </variable>
+    <variable name="_TANH" type="xsd:string" length="1">
+     <value>TANH</value>
+    </variable>
+    <variable name="_ABS" type="xsd:string" length="1">
+     <value>ABS</value>
+    </variable>
+    <variable name="_MOD" type="xsd:string" length="1">
+     <value>MOD</value>
+    </variable>
+    <variable name="_ERF" type="xsd:string" length="1">
+     <value>ERF</value>
+    </variable>
+    <variable name="_REFC" type="xsd:string" length="1">
+     <value>REFC</value>
+    </variable>
+    <variable name="_ERFC" type="xsd:string" length="1">
+     <value>ERFC</value>
+    </variable>
+    <variable name="_HYPOT" type="xsd:string" length="1">
+     <value>HYPOT</value>
+    </variable>
+    <variable name="_J0" type="xsd:string" length="1">
+     <value>J0</value>
+    </variable>
+    <variable name="_J1" type="xsd:string" length="1">
+     <value>J1</value>
+    </variable>
+    <variable name="_JN" type="xsd:string" length="1">
+     <value>JN</value>
+    </variable>
+    <variable name="_GAMMA" type="xsd:string" length="1">
+     <value>GAMMA</value>
+    </variable>
+    <variable name="_LGAMMA" type="xsd:string" length="1">
+     <value>LGAMMA</value>
+    </variable>
+    <variable name="_Y0" type="xsd:string" length="1">
+     <value>Y0</value>
+    </variable>
+    <variable name="_Y1" type="xsd:string" length="1">
+     <value>Y1</value>
+    </variable>
+    <variable name="_YN" type="xsd:string" length="1">
+     <value>YN</value>
+    </variable>
+    <variable name="_EXP" type="xsd:string" length="1">
+     <value>EXP</value>
+    </variable>
+    <variable name="_LOG" type="xsd:string" length="1">
+     <value>LOG</value>
+    </variable>
+    <variable name="_LOG10" type="xsd:string" length="1">
+     <value>LOG10</value>
+    </variable>
+    <variable name="_SQRT" type="xsd:string" length="1">
+     <value>SQRT</value>
+    </variable>
+    <variable name="_INT" type="xsd:string" length="1">
+     <value>INT</value>
+    </variable>
+    <variable name="_NINT" type="xsd:string" length="1">
+     <value>NINT</value>
+    </variable>
+    <variable name="_MAX" type="xsd:string" length="1">
+     <value>MAX</value>
+    </variable>
+    <variable name="_MIN" type="xsd:string" length="1">
+     <value>MIN</value>
+    </variable>
+    <variable name="_COSMO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOIT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOES" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOEDS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOEC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOEDCORR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FEPSI" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SL_IsMM" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_NSYM" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SL_System_BitSw" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Unique_atoms" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GRAD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_MAXUPD_Hess" type="xsd:double" length="1">
+     <value>5.0</value>
+    </variable>
+    <variable name="_SL_N_PRINT_COD" type="xsd:double" length="1">
+     <value>5.0</value>
+    </variable>
+    <variable name="_SL_PRINT_CODES" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_BasType" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Energy_Pred" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_New_Coords" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Total_Nuclea" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Highest_Mltp" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Ref_Geom" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Symmetry_ope" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SL_agrad" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GrdMax" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GrdNorm" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GrdRMS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Hss_Q" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Hss_X" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_BMxOld" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_KtB" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_TROld" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_No_of_Intern" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Hess" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_K" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LATTICE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!NEWLATTICE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LATGRAD_VAR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SEW_LATTICE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!AIC_ONEEL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LOCAL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SAVEDOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!RESTDOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!SAVEDOM_HF" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!RESTDOM_HF" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!HESSREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!FREQREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!NMODREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!GTASKS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!HTASKS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SAVEDOM_EOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!RESTDOM_EOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!GRADSTATE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!THRCHG" type="xsd:double" length="1">
+     <value>0.1</value>
+    </variable>
+    <variable name="!DEBUG" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!CFIT_CPHF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!RDOMAUX_CPHF" type="xsd:double" length="1">
+     <value>3.0</value>
+    </variable>
+    <variable name="!THRAO_CPHF" type="xsd:double" length="1">
+     <value>0.1E-09</value>
+    </variable>
+    <variable name="!THRMO_CPHF" type="xsd:double" length="1">
+     <value>0.1E-08</value>
+    </variable>
+    <variable name="!THROV_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRSW_CPHF" type="xsd:double" length="1">
+     <value>0.1E-09</value>
+    </variable>
+    <variable name="!THRPROD_CPHF" type="xsd:double" length="1">
+     <value>0.1E-08</value>
+    </variable>
+    <variable name="!THRAOPR_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!CFIT_SCFGRD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!RDOMAUX_SCFGRD" type="xsd:double" length="1">
+     <value>7.0</value>
+    </variable>
+    <variable name="!THRAO_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-09</value>
+    </variable>
+    <variable name="!THRMO_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-08</value>
+    </variable>
+    <variable name="!THROV_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRSW_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-09</value>
+    </variable>
+    <variable name="!THRPROD_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-08</value>
+    </variable>
+    <variable name="!THRAOPR_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!LOCFIT_SCF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LOCFIT_MP2" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_RIDOM" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!CC2_METHOD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_BASIS2006" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SVDDEL" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELA" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELP" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELF" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDEL_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELA_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELP_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELF_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELS_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_MAXBASIS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!OPT_CONICAL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!CLEARSP_JGRID" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GRDHYBR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_STATEGRAD" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_4EXT_NDISKS" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!EMBEDFLAG" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!EMBED" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_F12" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBEDNUC" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EMBEDENERGY" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_DFC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!NUM_VOIDS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_IBODY" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EMBE_CORR" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_PROJ" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMB_PROJ_ZMU" type="xsd:double" length="1">
+     <value>1000000.0</value>
+    </variable>
+    <variable name="!CORRECTION_HF" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_AORB" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_NACORR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_MP2" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_TRUNC_PERTURBATION" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_FROZEN" type="xsd:double" units="R" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_ACTIVE" type="xsd:double" units="R" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CHANGE_BASIS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RESTORE_BASIS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FIX_EMBED_GUESS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EMBED_SCF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA_T" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA_F" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA_CORRECT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!FASTLATGRAD" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!FASTVLAMBDA" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!IFORCE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SINDEX" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_OSV" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_PNO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_PAO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_LMO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CC2OSV_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EOMCCSD_CONV" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_TMADC2_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_PROPADC2_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_LEN_VirQ" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GRDCC2LR_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GRDADC2_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMX_CC" type="xsd:double" units="AU" length="3">
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMY_CC" type="xsd:double" units="AU" length="3">
+     <value>-0.174688986207843E-13</value>
+     <value>-0.174688986207843E-13</value>
+     <value>-0.174688986207843E-13</value>
+    </variable>
+    <variable name="_DMZ_CC" type="xsd:double" units="AU" length="3">
+     <value>-0.128389905933266E-12</value>
+     <value>-0.128389905933266E-12</value>
+     <value>-0.128389905933266E-12</value>
+    </variable>
+    <variable name="_DMX_NUC" type="xsd:double" units="AU" length="3">
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMY_NUC" type="xsd:double" units="AU" length="3">
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMZ_NUC" type="xsd:double" units="AU" length="3">
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="_RO_VGLOBAL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_OPT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FREQ" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HESS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CMRCC_callName" type="xsd:string" length="1">
+     <value>EMPTY</value>
+    </variable>
+    <variable name="_CMRCC_callCount" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GECCO_CIROOT" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="NELECT" type="xsd:double" length="1">
+     <value>16.0</value>
+    </variable>
+    <variable name="GX1" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GY1" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GZ1" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.677</value>
+    </variable>
+    <variable name="GX2" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GY2" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GZ2" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.677</value>
+    </variable>
+    <variable name="GX3" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GY3" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.915</value>
+    </variable>
+    <variable name="GZ3" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.232</value>
+    </variable>
+    <variable name="GX4" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GY4" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.916</value>
+    </variable>
+    <variable name="GZ4" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.231</value>
+    </variable>
+    <variable name="GX5" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GY5" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.916</value>
+    </variable>
+    <variable name="GZ5" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-1.231</value>
+    </variable>
+    <variable name="GX6" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="GY6" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.915</value>
+    </variable>
+    <variable name="GZ6" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-1.232</value>
+    </variable>
+    <variable name="_TRDMX" type="xsd:double" units="AU" length="3">
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="_TRDMY" type="xsd:double" units="AU" length="3">
+     <value>-0.769969718742875E-05</value>
+     <value>0.23888208317773E-15</value>
+     <value>-0.117319049850152E-04</value>
+    </variable>
+    <variable name="_TRDMZ" type="xsd:double" units="AU" length="3">
+     <value>-1.51188026930267</value>
+     <value>0.152252663433992E-13</value>
+     <value>-2.30362769293544</value>
+    </variable>
+   </variables>
+   <!--
+ Molecular orbitals read from record     2140.2  Type=MCSCF/NATURAL (state averaged)
+ Occupation numbers read from record     2140.2  Type=MCSCF/NATURAL (state averaged)
+ Orbital energies read from record       2140.2  Type=MCSCF/NATURAL (state averaged)
+ Redundancy group numbers read from rec  2140.2  Type=MCSCF/NATURAL (state averaged)
+   -->
+   <orbitals basis="ORBITAL" angular="cartesian" spin="closed" method="MCSCF" type="NATURAL"
+     stateID="-3" state_symmetry="1" state_nelec="2" state_ms2="0">
+    <orbital occupation="2.0" energy="-11.240574" symmetryID="1">
+      0.704222575658683 0.166674787919263E-01 -0.681490421110704E-02 0.0 0.476664353067683E-07 -0.247152190308815E-04 0.0 0.146763824957939E-05 -0.623204441314539E-03 -0.253442481796216E-03
+      0.176290181235219E-03 0.771523005609971E-04 0.0 0.0 0.919780002871479E-06 0.70422257567084 0.166674787922311E-01 -0.681490421132258E-02 0.0 -0.476664356350068E-07
+      0.247152190475055E-04 0.0 -0.146763824927642E-05 0.623204441284516E-03 -0.253442481807875E-03 0.176290181231782E-03 0.771523005760924E-04 0.0 0.0 0.91978000292447E-06
+      -0.315324453254233E-03 0.193029157301893E-02 -0.314211114646901E-03 0.193086403502614E-02 -0.314211114649721E-03 0.193086403506146E-02 -0.315324453257191E-03 0.193029157305481E-02
+    </orbital>
+    <orbital occupation="2.0" energy="-11.239362" symmetryID="1">
+      0.704489350573345 0.179101925723822E-01 -0.12447663091967E-01 0.0 0.580550532335087E-07 -0.945193870235075E-03 0.0 0.105122152721361E-05 0.180894743599861E-02 -0.628794945808198E-03
+      -0.142080966763618E-03 0.770875912571816E-03 0.0 0.0 0.546550022052771E-06 -0.704489350561193 -0.17910192572096E-01 0.124476630918452E-01 0.0 0.580550541077995E-07
+      -0.945193870232238E-03 0.0 0.105122152279975E-05 0.180894743600942E-02 0.628794945802801E-03 0.142080966766418E-03 -0.770875912569219E-03 0.0 0.0 -0.546550020549482E-06
+      -0.137222816811576E-03 0.182753185857449E-02 -0.136163246378953E-03 0.182741143969059E-02 0.136163246373784E-03 -0.182741143965101E-02 0.137222816805076E-03 -0.182753185853902E-02
+    </orbital>
+    <orbital occupation="2.0" energy="-1.037119" symmetryID="1">
+      -0.156690216113998 0.309228414194655 0.223206662365428 0.0 0.757584012175076E-05 -0.114663960896787 0.0 0.429612156705879E-05 -0.100317976556386E-01 -0.192856600938703E-01
+      0.301350819878353E-02 0.162721518950868E-01 0.0 0.0 0.127339151360862E-04 -0.156690216114004 0.309228414194636 0.223206662365514 0.0 -0.757584012572515E-05
+      0.114663960896893 0.0 -0.429612158609614E-05 0.100317976554763E-01 -0.192856600938833E-01 0.301350819881023E-02 0.16272151895073E-01 0.0 0.0 0.127339151354336E-04
+      0.826559838099875E-01 0.165499813525966E-01 0.826416620397343E-01 0.165625984558827E-01 0.826416620398108E-01 0.165625984557537E-01 0.826559838100685E-01 0.165499813524315E-01
+    </orbital>
+    <orbital occupation="2.0" energy="-0.802302" symmetryID="1">
+      -0.123727142946226 0.240664997242575 0.284839580016673 0.0 0.120854139133619E-03 0.161608625497308 0.0 0.198894802305745E-04 0.429210714980902E-01 -0.126841854921352E-01
+      0.207269838984326E-01 -0.804279840629738E-02 0.0 0.0 0.287551786486022E-04 0.123727142946218 -0.240664997242711 -0.284839580016294 0.0 0.120854139136405E-03
+      0.161608625497349 0.0 0.198894803818175E-04 0.429210714979809E-01 0.126841854921235E-01 -0.207269838984131E-01 0.80427984062896E-02 0.0 0.0 -0.287551786673981E-04
+      0.144613870105514 0.623825289282078E-01 0.144392424202977 0.622943757065162E-01 -0.14439242420291 -0.622943757068292E-01 -0.144613870105444 -0.623825289283093E-01
+    </orbital>
+    <orbital occupation="2.0" energy="-0.652838" symmetryID="1">
+      0.42031485262313E-04 -0.741972489184665E-04 -0.179494302987205E-03 0.0 0.327107278290488 0.217113022681981E-04 0.0 0.137069774677107 0.853132270483423E-05 0.647827422376467E-05
+      -0.350875900759813E-04 0.286093158522166E-04 0.0 0.0 0.102690872439008E-01 -0.420314852677387E-04 0.741972489245546E-04 0.179494303048692E-03 0.0 0.327107278290572
+      0.21711302317944E-04 0.0 0.137069774677078 0.8531322696322E-05 -0.647827422106792E-05 0.350875900719239E-04 -0.28609315850856E-04 0.0 0.0 -0.102690872439046E-01
+      0.155439496218056 0.963491253673448E-01 -0.155614017505131 -0.964801977814583E-01 0.155614017505128 0.964801977814021E-01 -0.15543949621808 -0.963491253673937E-01
+    </orbital>
+    <orbital occupation="2.0" energy="-0.59318" symmetryID="1">
+      0.578056091244318E-02 -0.183185526409872E-01 0.246180587495659E-01 0.0 0.587651652661282E-03 0.409499460967557 0.0 0.345302231384068E-03 0.150061831420383 -0.28254400699363E-02
+      0.235754046311586E-01 -0.207499645612223E-01 0.0 0.0 0.846068527639133E-04 0.578056091243055E-02 -0.183185526410023E-01 0.24618058749884E-01 0.0 -0.587651652623528E-03
+      -0.409499460967434 0.0 -0.345302231383432E-03 -0.150061831420413 -0.282544006994958E-02 0.235754046311868E-01 -0.207499645612372E-01 0.0 0.0 0.846068527662869E-04
+      0.126229766428006 0.975040670268182E-01 0.125382720227988 0.970080825238866E-01 0.125382720228072 0.970080825237462E-01 0.126229766428054 0.97504067026609E-01
+    </orbital>
+    <orbital occupation="2.0" energy="-0.517613" symmetryID="1">
+      -0.39459358643705E-04 0.121557100720216E-03 0.244086728966599E-04 0.0 0.313791497502445 -0.791568209352836E-03 0.0 0.206026255445439 -0.305406871701664E-03 0.997225369343747E-05
+      -0.80812404825473E-04 0.708401511320355E-04 0.0 0.0 0.336837696047581E-01 -0.394593586281945E-04 0.12155710070302E-03 0.244086725426555E-04 0.0 -0.313791497502365
+      0.791568209309277E-03 0.0 -0.20602625544544 0.305406871501296E-03 0.997225368891785E-05 -0.808124048451051E-04 0.708401511561873E-04 0.0 0.0 0.33683769604777E-01
+      0.186410293019 0.139810690708205 -0.186981758741535 -0.140415300655305 -0.186981758741575 -0.140415300655262 0.186410293018987 0.139810690708248
+    </orbital>
+    <orbital occupation="1.0" energy="-0.222121" symmetryID="1">
+      0.0 0.0 0.0 0.355888531899179 0.0 0.0 0.322846845993947 0.0 0.0 0.0
+      0.0 0.0 0.265524040799885E-05 -0.318588435077127E-01 0.0 0.0 0.0 0.0 0.355888531899195 0.0
+      0.0 0.322846845993929 0.0 0.0 0.0 0.0 0.0 -0.26552404106968E-05 0.31858843507712E-01 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="1.0" energy="0.030877" symmetryID="1">
+      0.0 0.0 0.0 0.380322764617878 0.0 0.0 0.678636820179334 0.0 0.0 0.0
+      0.0 0.0 0.57824830286007E-05 0.167055126940382E-01 0.0 0.0 0.0 0.0 -0.380322764617867 0.0
+      0.0 -0.678636820179342 0.0 0.0 0.0 0.0 0.0 0.578248303088214E-05 0.167055126940429E-01 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="-0.0" energy="0.263721" symmetryID="1">
+      0.774537808146133E-01 -0.824450134969469E-01 -1.49846038709665 0.0 0.205654048243023E-03 -0.136431372960804 0.0 0.954693075230441E-03 -0.644102532743926 0.232324812679207E-03
+      0.675134338277977E-02 -0.698366819545898E-02 0.0 0.0 0.283652661309129E-06 0.774537808146976E-01 -0.82445013496956E-01 -1.4984603870985 0.0 -0.205654048166719E-03
+      0.136431372960827 0.0 -0.954693075045844E-03 0.644102532743308 0.232324812691903E-03 0.675134338278094E-02 -0.698366819547285E-02 0.0 0.0 0.283652664912538E-06
+      0.123581116690301E-01 1.04242647034568 0.124175772500893E-01 1.0429858739385 0.124175772500848E-01 1.04298587393867 0.123581116690248E-01 1.04242647034637
+    </orbital>
+    <orbital occupation="-0.0" energy="0.289651" symmetryID="1">
+      -0.257855649865738E-04 0.955541116607463E-04 -0.108468860956829E-03 0.0 0.248949388554419 -0.770643878181416E-04 0.0 0.818875524752228 0.658537787680527E-03 0.110445279786873E-04
+      0.184654639560995E-04 -0.295099919347868E-04 0.0 0.0 -0.264421893058265E-01 0.257855649667033E-04 -0.955541116391633E-04 0.108468861317797E-03 0.0 0.248949388554442
+      -0.770643878506648E-04 0.0 0.818875524752151 0.65853778751857E-03 -0.110445279778905E-04 -0.18465463959942E-04 0.295099919378325E-04 0.0 0.0 0.264421893058239E-01
+      -0.438784453472126E-01 -1.1120877276241 0.439188565354032E-01 1.11204172331939 -0.439188565353903E-01 -1.11204172331957 0.438784453471992E-01 1.11208772762378
+    </orbital>
+    <orbital occupation="-0.0" energy="0.308" symmetryID="1">
+      -0.10906139435584 0.991409251789604E-01 1.98657048455007 0.0 -0.102421723334939E-03 0.806093490165827E-01 0.0 -0.233889215682499E-03 0.108651677454395 -0.406876915201931E-02
+      0.55438905147414E-02 -0.147512136272209E-02 0.0 0.0 0.321203324519376E-08 0.109061394355793 -0.991409251789054E-01 -1.98657048454932 0.0 -0.10242172330468E-03
+      0.806093490164626E-01 0.0 -0.23388921570409E-03 0.108651677454091 0.406876915201804E-02 -0.554389051474353E-02 0.147512136272549E-02 0.0 0.0 -0.321203626969183E-08
+      -0.193256863133458E-01 -1.0751814968619 -0.192990865399178E-01 -1.07479835073165 0.192990865399443E-01 1.07479835073116 0.193256863133434E-01 1.07518149686136
+    </orbital>
+    <orbital occupation="-0.0" energy="0.386295" symmetryID="1">
+      0.366004707855506E-04 0.149129499047894E-04 -0.206157579803488E-02 0.0 -0.249332959557274 -0.326335681040873E-03 0.0 -1.86522147073415 -0.119483489060944E-02 0.699920231460839E-06
+      -0.244669466337729E-04 0.237670264023121E-04 0.0 0.0 -0.14341017100696E-01 0.366004707736941E-04 0.149129499053493E-04 -0.206157579778328E-02 0.0 0.249332959557272
+      0.326335681048682E-03 0.0 1.86522147073415 0.119483489080255E-02 0.699920229294758E-06 -0.244669466333269E-04 0.237670264040321E-04 0.0 0.0 -0.143410171006968E-01
+      -0.351394811159495E-01 1.64100856527998 0.349992246679362E-01 -1.63849222282564 0.349992246679425E-01 -1.63849222282564 -0.351394811159336E-01 1.64100856528005
+    </orbital>
+    <orbital occupation="-0.0" energy="0.482667" symmetryID="1">
+      0.669654542866808E-01 -0.110978996850902E-01 -2.77167286489862 0.0 0.512238440369605E-04 0.166402119638327 0.0 0.348415137190342E-03 2.84113457182507 0.119560338363115E-01
+      -0.198205276713941E-01 0.786449383508264E-02 0.0 0.0 0.805139444081564E-05 -0.669654542866575E-01 0.110978996849993E-01 2.77167286489847 0.0 0.512238439915719E-04
+      0.166402119638447 0.0 0.348415136995518E-03 2.84113457182508 -0.1195603383631E-01 0.198205276713908E-01 -0.786449383508083E-02 0.0 0.0 -0.805139443764747E-05
+      -0.684991229437634E-01 -0.597938974081708 -0.688433327550168E-01 -0.595554006908745 0.688433327549723E-01 0.595554006909008 0.684991229437567E-01 0.597938974081748
+    </orbital>
+    <orbital occupation="-0.0" energy="0.662603" symmetryID="1">
+      0.190271657883402E-01 0.230964252856851 0.186231513894291 0.0 0.66722048878123E-03 -0.552536916778774 0.0 -0.272306074414762E-03 1.00988312747747 -0.164914162670205E-01
+      -0.543325856976866E-01 0.708240019647071E-01 0.0 0.0 0.28050479017602E-04 0.190271657883522E-01 0.230964252856738 0.186231513894352 0.0 -0.667220488810922E-03
+      0.552536916778738 0.0 0.272306074459855E-03 -1.00988312747758 -0.164914162670243E-01 -0.543325856976981E-01 0.708240019647224E-01 0.0 0.0 0.280504790210353E-04
+      -0.971762904391743E-01 -0.467258051087855E-01 -0.976645315315122E-01 -0.446384344285732E-01 -0.976645315315532E-01 -0.446384344286121E-01 -0.971762904391753E-01 -0.467258051088211E-01
+    </orbital>
+    <orbital occupation="-0.0" energy="0.750263" symmetryID="1">
+      -0.683669411995492E-04 -0.423582508565135E-03 -0.574878206149304E-03 0.0 -0.408542361198662 -0.851875419775251E-03 0.0 0.794892620456537 0.305559906283437E-02 0.124772852336854E-03
+      0.65832032290619E-04 -0.190604884627472E-03 0.0 0.0 -0.916803133843756E-01 0.683669411993047E-04 0.423582508563735E-03 0.574878206096528E-03 0.0 -0.40854236119866
+      -0.851875419803151E-03 0.0 0.794892620456573 0.305559906290806E-02 -0.124772852337597E-03 -0.658320322870761E-04 0.190604884624673E-03 0.0 0.0 0.916803133843763E-01
+      -0.380140106818125 -0.88753132488584E-01 0.379085793392043 0.877063755633147E-01 -0.379085793392025 -0.877063755633261E-01 0.380140106818129 0.887531324886373E-01
+    </orbital>
+    <orbital occupation="-0.0" energy="0.77496" symmetryID="1">
+      0.0 0.0 0.0 -0.751072009634991 0.0 0.0 0.634084628920329 0.0 0.0 0.0
+      0.0 0.0 -0.583244844932498E-05 0.659844080578592E-01 0.0 0.0 0.0 0.0 -0.751072009635035 0.0
+      0.0 0.634084628920374 0.0 0.0 0.0 0.0 0.0 0.583244845099349E-05 -0.659844080578567E-01 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="-0.0" energy="0.85795" symmetryID="1">
+      -0.251899054984724E-01 -0.887637118662671 1.48340824228402 0.0 0.147278946789493E-03 0.343564741996263E-01 0.0 -0.102792053502131E-03 0.346357597013826 0.114715701796641
+      -0.815316568048191E-01 -0.331840449918222E-01 0.0 0.0 -0.277685255847292E-04 -0.251899054984712E-01 -0.887637118662723 1.48340824228407 0.0 -0.147278946792116E-03
+      -0.343564741996289E-01 0.0 0.102792053503209E-03 -0.346357597013894 0.114715701796644 -0.815316568048324E-01 -0.33184044991812E-01 0.0 0.0 -0.277685255822191E-04
+      -0.393527584433701 -0.24076284476348 -0.393511037079545 -0.240426988633704 -0.393511037079579 -0.240426988633714 -0.393527584433718 -0.240762844763508
+    </orbital>
+    <orbital occupation="-0.0" energy="0.871617" symmetryID="1">
+      0.0 0.0 0.0 -0.801686171620762 0.0 0.0 1.09734656417231 0.0 0.0 0.0
+      0.0 0.0 -0.507258872346752E-05 -0.230725094402549E-01 0.0 0.0 0.0 0.0 0.801686171620719 0.0
+      0.0 -1.09734656417229 0.0 0.0 0.0 0.0 0.0 -0.507258872371464E-05 -0.23072509440261E-01 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="-0.0" energy="0.925762" symmetryID="1">
+      0.79875820821212E-01 0.757183126492325E-01 -0.638821905516113 0.0 -0.112788610419156E-02 0.620030838509349 0.0 0.210338124472172E-02 -0.604009488507488 -0.129606279030236
+      0.131076768388502E-01 0.116498602191386 0.0 0.0 -0.663126759260773E-04 -0.7987582082121E-01 -0.75718312649181E-01 0.638821905516018 0.0 -0.112788610419496E-02
+      0.620030838509355 0.0 0.210338124469427E-02 -0.604009488507466 0.129606279030238 -0.131076768388528E-01 -0.116498602191385 0.0 0.0 0.663126759238981E-04
+      0.373746273480454 0.967278562226548E-01 0.374624612819958 0.982186949346575E-01 -0.374624612819962 -0.982186949346163E-01 -0.373746273480455 -0.967278562226374E-01
+    </orbital>
+    <orbital occupation="-0.0" energy="1.111384" symmetryID="1">
+      -0.10383287475359E-03 0.243750102224442E-03 0.11751900226303E-02 0.0 -0.684519096870487 0.493270136994596E-03 0.0 1.1097115678917 -0.190426495104169E-02 0.196300503634617E-03
+      -0.318647969753856E-03 0.122347466119239E-03 0.0 0.0 0.197701728709104 0.103832874752877E-03 -0.243750102237256E-03 -0.117519002260772E-02 0.0 -0.684519096870492
+      0.493270136991107E-03 0.0 1.10971156789164 -0.190426495104355E-02 -0.196300503636502E-03 0.318647969756745E-03 -0.122347466120243E-03 0.0 0.0 -0.197701728709102
+      0.383517306053028 -1.07401977554574 -0.385565125960339 1.07717766952482 0.385565125960327 -1.07717766952481 -0.383517306053018 1.07401977554571
+    </orbital>
+    <orbital occupation="-0.0" energy="1.150219" symmetryID="1">
+      0.464763852059304E-04 -0.181719996051029E-02 0.895617521407259E-03 0.0 0.923084335982338 -0.509012587540218E-04 0.0 -2.97991239393501 -0.160503102931735E-02 -0.53661879861559E-04
+      0.281601530824223E-03 -0.227939650962664E-03 0.0 0.0 -0.103041561654638E-02 0.464763852012936E-04 -0.181719996054439E-02 0.895617521601533E-03 0.0 -0.92308433598233
+      0.509012587243895E-04 0.0 2.97991239393504 0.160503102945387E-02 -0.536618798624454E-04 0.281601530815612E-03 -0.227939650953167E-03 0.0 0.0 -0.103041561654718E-02
+      -0.144855712260774 1.5436710772541 0.146639193131683 -1.54472405805631 0.146639193131678 -1.5447240580563 -0.144855712260813 1.54367107725415
+    </orbital>
+    <orbital occupation="-0.0" energy="1.215798" symmetryID="1">
+      -0.314524670739546E-01 1.03424711303992 -1.73257999712379 0.0 0.167911188698317E-02 0.3682558347872 0.0 -0.702028763937332E-02 -0.499160861190803 0.615611101244663E-01
+      -0.118573977673337 0.570128675488702E-01 0.0 0.0 -0.489121675338903E-04 -0.31452467073829E-01 1.03424711303921 -1.73257999712538 0.0 -0.167911188698362E-02
+      -0.368255834785115 0.0 0.702028763937469E-02 0.49916086118597 0.615611101242601E-01 -0.118573977672803 0.570128675485424E-01 0.0 0.0 -0.489121675311824E-04
+      -0.439866507594266 0.872486757366589 -0.44003855955624 0.865557324478913 -0.440038559554698 0.865557324476102 -0.439866507592729 0.87248675736378
+    </orbital>
+    <orbital occupation="-0.0" energy="1.220304" symmetryID="1">
+      0.331912091644056E-01 -0.347028789056879 -0.864649087202787E-01 0.0 -0.969811656777792E-03 -0.643413240597338 0.0 0.169696072173697E-02 1.42908144934263 -0.668100572781033E-01
+      0.1611727066776 -0.943626493994972E-01 0.0 0.0 0.511275848660405E-03 -0.331912091645274E-01 0.347028789060197 0.864649087148055E-01 0.0 -0.969811656729464E-03
+      -0.643413240598553 0.0 0.169696072160728E-02 1.42908144934422 0.668100572782928E-01 -0.161172706677973 0.943626493996801E-01 0.0 0.0 -0.511275848661787E-03
+      0.485440586905828 -0.93048366811685 0.484099750861649 -0.926359677620831 -0.48409975086298 0.926359677623672 -0.485440586907188 0.930483668119555
+    </orbital>
+    <orbital occupation="-0.0" energy="1.311499" symmetryID="1">
+      -0.131462828281311E-01 -1.64377071727752 5.34095469712589 0.0 0.330002810821839E-03 0.182572263563817 0.0 -0.870976902920388E-03 -1.7257695937942 0.606981852683414E-02
+      -0.109191279869119 0.103121461342284 0.0 0.0 0.425072329252801E-04 0.131462828281399E-01 1.64377071727725 -5.34095469712534 0.0 0.330002810790073E-03
+      0.182572263563943 0.0 -0.870976902891639E-03 -1.72576959379442 -0.606981852684685E-02 0.109191279869133 -0.103121461342286 0.0 0.0 -0.425072329306706E-04
+      -0.706475588819206E-01 -0.452033945086879 -0.70778976412741E-01 -0.452884273620439 0.707789764128503E-01 0.45288427362013 0.706475588819874E-01 0.452033945086652
+    </orbital>
+    <orbital occupation="-0.0" energy="1.471649" symmetryID="1">
+      -0.256068468728997E-04 0.98943743162003E-03 0.14099985586398E-02 0.0 -0.225860635585873E-01 -0.254089153840361E-03 0.0 2.52559171762989 0.248714812713816E-02 -0.146275302128016E-03
+      0.224701023888551E-03 -0.784257217605347E-04 0.0 0.0 -0.169300511852006 -0.256068468724066E-04 0.98943743157048E-03 0.1409998558766E-02 0.0 0.225860635585915E-01
+      0.254089153841327E-03 0.0 -2.5255917176299 -0.248714812713596E-02 -0.146275302130129E-03 0.22470102388854E-03 -0.784257217584112E-04 0.0 0.0 -0.16930051185201
+      -0.699024117446379 -0.678871914514457 0.698176948976341 0.67733253321231 0.698176948976344 0.677332533212287 -0.699024117446371 -0.678871914514503
+    </orbital>
+    <orbital occupation="-0.0" energy="1.709498" symmetryID="1">
+      0.0 0.0 0.0 0.185571895174996 0.0 0.0 -0.316912639348011E-01 0.0 0.0 0.0
+      0.0 0.0 0.683402139513641E-04 0.620912480292023 0.0 0.0 0.0 0.0 0.18557189517499 0.0
+      0.0 -0.316912639348041E-01 0.0 0.0 0.0 0.0 0.0 -0.683402139439067E-04 -0.620912480292034 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="-0.0" energy="1.812681" symmetryID="1">
+      0.0 0.0 0.0 -0.142922942470044E-04 0.0 0.0 -0.103290071899665E-04 0.0 0.0 0.0
+      0.0 0.0 0.682663525183021 0.43070214702287E-04 0.0 0.0 0.0 0.0 0.142922942482193E-04 0.0
+      0.0 0.10329007190039E-04 0.0 0.0 0.0 0.0 0.0 0.682663525183025 0.430702147093562E-04 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="-0.0" energy="2.09762" symmetryID="1">
+      0.0 0.0 0.0 -0.245208321621607E-04 0.0 0.0 0.681775820730523E-05 0.0 0.0 0.0
+      0.0 0.0 0.734378886046884 -0.571419590009935E-04 0.0 0.0 0.0 0.0 -0.245208321632853E-04 0.0
+      0.0 0.681775820638006E-05 0.0 0.0 0.0 0.0 0.0 -0.73437888604688 0.571419590038243E-04 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="-0.0" energy="2.203915" symmetryID="1">
+      0.277505173425855E-01 0.234108566065026 -0.608357213653933 0.0 -0.166778384712531E-03 -0.129366323014352 0.0 0.188688780343843E-02 -0.167029095156797 0.699248651757872
+      -0.522484008996052 -0.17676464276182 0.0 0.0 0.202383151501275E-03 0.277505173425865E-01 0.234108566065022 -0.608357213653967 0.0 0.166778384706879E-03
+      0.129366323014341 0.0 -0.188688780343764E-02 0.167029095156782 0.699248651757886 -0.522484008996048 -0.176764642761837 0.0 0.0 0.202383151504463E-03
+      0.368810559204051 0.104083773292076 0.369645964092742 0.105283954778436 0.369645964092751 0.10528395477843 0.368810559204053 0.104083773292075
+    </orbital>
+    <orbital occupation="-0.0" energy="2.319021" symmetryID="1">
+      0.345052102395572E-04 0.405685212592427E-03 -0.299970576784592E-02 0.0 0.282908840332017 0.637948458305563E-03 0.0 0.211653234037713 0.201508016537749E-02 0.143684243502759E-03
+      0.124665793551516E-03 -0.268350037054275E-03 0.0 0.0 0.694290643902462 -0.345052102393511E-04 -0.405685212594301E-03 0.299970576783995E-02 0.0 0.282908840332011
+      0.637948458299001E-03 0.0 0.21165323403773 0.201508016538538E-02 -0.14368424350053E-03 -0.124665793561653E-03 0.268350037062183E-03 0.0 0.0 -0.694290643902454
+      -0.527493373607695 0.862071067161994E-01 0.52673504689015 -0.862466494404226E-01 -0.526735046890148 0.862466494404165E-01 0.527493373607699 -0.862071067161896E-01
+    </orbital>
+    <orbital occupation="-0.0" energy="2.375545" symmetryID="1">
+      0.760746871204982E-03 -0.490610944922935 0.121314079309494 0.0 0.132841160193991E-03 0.278829454124867 0.0 0.680700110622139E-03 -0.450629241636577 -0.158473823727059
+      -0.516234463233003 0.674708286960062 0.0 0.0 -0.295821522759624E-03 0.760746871204277E-03 -0.490610944922956 0.121314079309603 0.0 -0.132841160197858E-03
+      -0.278829454124855 0.0 -0.680700110626351E-03 0.450629241636607 -0.158473823727066 -0.516234463233009 0.674708286960075 0.0 0.0 -0.295821522750806E-03
+      0.190138760055467 -0.307124159293651E-01 0.191050836710738 -0.309811677640047E-01 0.191050836710747 -0.309811677640197E-01 0.190138760055461 -0.307124159293811E-01
+    </orbital>
+    <orbital occupation="-0.0" energy="2.612809" symmetryID="1">
+      0.4139168620013E-01 0.286537102546573 -1.36621539924565 0.0 -0.138633737690415E-03 -0.954236535395255E-01 0.0 0.463010111574338E-03 0.289603977067045 0.69350239937501
+      -0.691287522535197 -0.221487683981267E-02 0.0 0.0 -0.598170814668417E-04 -0.413916862001297E-01 -0.28653710254657 1.36621539924563 0.0 -0.13863373768654E-03
+      -0.954236535395274E-01 0.0 0.463010111564913E-03 0.289603977067055 -0.693502399375004 0.691287522535193 0.221487683981092E-02 0.0 0.0 0.598170814674237E-04
+      0.455274497193672 0.188124467511983E-02 0.455654530967516 0.211399479792651E-02 -0.455654530967517 -0.211399479791441E-02 -0.455274497193672 -0.188124467511786E-02
+    </orbital>
+    <orbital occupation="-0.0" energy="2.669729" symmetryID="1">
+      0.0 0.0 0.0 -0.10531582753181 0.0 0.0 -0.262261865891836 0.0 0.0 0.0
+      0.0 0.0 -0.331478552627212E-04 0.893454525567994 0.0 0.0 0.0 0.0 0.105315827531813 0.0
+      0.0 0.262261865891835 0.0 0.0 0.0 0.0 0.0 -0.331478552604444E-04 0.893454525567986 0.0
+      0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+    </orbital>
+    <orbital occupation="-0.0" energy="3.027361" symmetryID="1">
+      -0.687835632266103E-01 0.260786082896412 2.01431440342803 0.0 0.204046637349749E-03 -0.747918108435757 0.0 -0.811745999580165E-04 -1.17874476923281 -0.550306064067474
+      -0.552632325534999 1.10293838960247 0.0 0.0 0.258749906938707E-03 0.687835632266094E-01 -0.26078608289643 -2.01431440342798 0.0 0.204046637346434E-03
+      -0.74791810843576 0.0 -0.811745999853029E-04 -1.17874476923283 0.550306064067462 0.552632325535001 -1.10293838960246 0.0 0.0 -0.258749906880417E-03
+      0.115531160617374E-01 0.525590855318188E-01 0.123861257475168E-01 0.518458677746347E-01 -0.123861257474927E-01 -0.518458677746594E-01 -0.115531160617685E-01 -0.525590855318311E-01
+    </orbital>
+    <orbital occupation="-0.0" energy="3.033433" symmetryID="1">
+      -0.360451115338917E-04 0.691457922351258E-04 0.103048311331095E-02 0.0 -0.464364353139301E-01 0.204489079345288E-03 0.0 0.590032619844967 0.88363333114635E-03 -0.391260680111043E-03
+      0.656885660172205E-04 0.325572114093823E-03 0.0 0.0 0.960540927468996 -0.360451115347802E-04 0.691457922476779E-04 0.103048311342133E-02 0.0 0.464364353139287E-01
+      -0.204489079293609E-03 0.0 -0.59003261984497 -0.883633331082198E-03 -0.391260680143533E-03 0.656885659837811E-04 0.325572114159752E-03 0.0 0.0 0.960540927469001
+      -0.487180039616648 -0.579948809224949E-01 0.485899303955717 0.574602354960186E-01 0.48589930395572 0.57460235496018E-01 -0.487180039616654 -0.579948809224953E-01
+    </orbital>
+   </orbitals>
+   <stm:metadataList>
+    <stm:metadata name="dc:date" content="2023-03-15T16:58:06-05:00"/>
+    <stm:metadata name="dc:creator" content="johan406"/>
+    <stm:metadata name="cmlm:insilico" content="Molpro"/>
+   </stm:metadataList>
+   <platform>
+    <version major="2019" minor="2" SHA="8dbd9ae1082e4ce945b0f27595c9eb2d4aa09004"
+      integer_bits="64" parallelism="serial">
+     2019.2
+     <date year="2023" month="3" day="15" hour="16" minute="58" second="5">
+      2023-03-15T16:58:05
+     </date>
+    </version>
+    <licence id="roweumn"/>
+    <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+    <machine hostname="cn0416"/>
+   </platform>
+  </molecule><!--
+
+ MULTI/6-31G* energy=    -77.496705846500
+
+           MULTI          HF-SCF
+    -77.49670585    -78.02962477
+ **********************************************************************************************************************************
+  -->
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-03-15T16:58:06-05:00"/>
+   <stm:metadata name="dc:creator" content="johan406"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform>
+   <version major="2019" minor="2" SHA="8dbd9ae1082e4ce945b0f27595c9eb2d4aa09004"
+     integer_bits="64" parallelism="serial">
+    2019.2
+    <date year="2023" month="3" day="15" hour="16" minute="58" second="5">
+     2023-03-15T16:58:05
+    </date>
+   </version>
+   <licence id="roweumn"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+   <machine hostname="cn0416"/>
+  </platform>
+  <input>
+   <p>!leave this line blank</p>
+   <p>gprint, orbitals=30</p>
+   <p>memory, 125., m</p>
+   <p>symmetry, nosym</p>
+   <p>nelect=16</p>
+   <p>basis=6-31g*</p>
+   <p>geometry={</p>
+   <p>C 0.000 0.000 0.677</p>
+   <p>C 0.000 -0.000 -0.677</p>
+   <p>H 0.000 0.915 1.232</p>
+   <p>H 0.000 -0.916 1.231</p>
+   <p>H 0.000 0.916 -1.231</p>
+   <p>H 0.000 -0.915 -1.232</p>
+   <p>}</p>
+   <p>hf</p>
+   <p>{multi,</p>
+   <p>closed 7</p>
+   <p>occ 9</p>
+   <p>wf,spin=0;STATE,3</p>
+   <p>}</p>
+  </input>
+  <diagnostics warnings="0"/>
+  <!--
+ --></job><!--
+ Molpro calculation terminated
+--></molpro>
